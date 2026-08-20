@@ -50,8 +50,8 @@ jobs:
         env:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
           HUGO_ENVIRONMENT: production
-          PATH: ${{ github.workspace }}/themes/hugo-texify3/node_modules/.bin:${{ env.PATH }}
         run: |
+          export PATH="${{ github.workspace }}/themes/hugo-texify3/node_modules/.bin:$PATH"
           hugo \
             --gc \
             --minify \
