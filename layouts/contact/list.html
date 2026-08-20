@@ -1,0 +1,17 @@
+{{ define "main" }}
+<main id="main" class="page">
+  <h1 class="page-title">{{ .Title }}</h1>
+  <article class="content page-intro">{{ .Content }}</article>
+
+  <div class="contact-cards">
+    <a class="contact-card" href="{{ .Site.Params.social.github }}" target="_blank" rel="noopener">
+      <h3>GitHub</h3>
+      <p>github.com/tacheraSasi</p>
+    </a>
+    <a class="contact-card" href="{{ .Site.Params.social.linkedin }}" target="_blank" rel="noopener">
+      <h3>LinkedIn</h3>
+      <p>Tachera W Sasi</p>
+    </a>
+  </div>
+</main>
+{{ end }}

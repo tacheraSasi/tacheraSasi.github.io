@@ -1,0 +1,42 @@
+{{ define "main" }}
+<main id="main" class="home">
+
+  <div class="intro">
+    <img src="/images/me.jpg" alt="{{ .Site.Params.author }}" width="128" height="160">
+    <div>
+      <h1>Hi, I&rsquo;m {{ .Site.Params.author }}</h1>
+      <ul class="social">
+        <li><a href="{{ .Site.Params.social.github }}" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="{{ .Site.Params.social.linkedin }}" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <p>
+    I&rsquo;m a passionate software engineer with a keen eye for design and a love for
+    creating seamless user experiences. With expertise in modern web technologies, I bring
+    ideas to life through clean, efficient code and stunning visuals. Creator @
+    <a href="https://vintlang.ekilie.com" target="_blank" rel="noopener">VintLang</a>.
+  </p>
+
+  <p class="page-links">
+    <a href="/about/">About</a> &middot;
+    <a href="/projects/">Projects</a> &middot;
+    <a href="/music/">Music</a> &middot;
+    <a href="/philosophy/">Philosophy</a>
+  </p>
+
+  <h2 class="section-heading">Writing</h2>
+  <ul class="essay-list">
+    {{ range first 5 (where site.RegularPages "Section" "posts") }}
+    <li>
+      <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+      <p class="meta">{{ .PublishDate.Format .Site.Params.dateFormat }}</p>
+      {{ with .Summary | replaceRE `<img[^>]*>` "" | replaceRE `<p>\s*</p>` "" }}{{ . | safeHTML }}{{ end }}
+    </li>
+    {{ end }}
+  </ul>
+  <p><a href="/posts/">All writing &rarr;</a></p>
+
+</main>
+{{ end }}

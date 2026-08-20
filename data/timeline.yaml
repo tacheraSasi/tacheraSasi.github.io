@@ -1,0 +1,41 @@
+- year: "2026"
+  title: "Lead Software Engineer (Golang & mobile -> React Native)"
+  organization: "AkiliSoft Ltd"
+  description: "Leading the engineering team building cross-platform mobile and web solutions with React Native, Golang, and PHP. Driving architecture decisions, code quality standards, and delivery of production-grade products."
+  type: work
+
+- year: "2025"
+  title: "Lead Software Engineer (Golang)"
+  organization: "ekilie"
+  description: "Leading engineering strategy, architecture decisions, and product direction for the ekilie ecosystem. Building scalable distributed systems and developer-first tools used across East Africa."
+  type: work
+
+- year: "2025"
+  title: "Backend Engineer"
+  organization: "IPFSoftwares"
+  description: "Designed high-performance backend systems and payment integrations using Go and TypeScript. Improved system reliability and performance across production workloads."
+  type: work
+
+- year: "2024"
+  title: "Founder & Open Source Creator"
+  organization: ""
+  description: "Built and maintained developer tools and AI-powered platforms including VintLang, ekiliRelay, ekiliSense, Magreth AI, and CLI utilities. Focused on Go, Rust, and modern full-stack engineering."
+  type: work
+
+- year: "2023"
+  title: "Impact-Driven Projects Launched"
+  organization: ""
+  description: "Released TUWK (rape support platform), Transliflow (translation & localization engine), and Ellie (offline local AI assistant). Focused on solving real community problems through technology."
+  type: project
+
+- year: "2022"
+  title: "Open Source Contributor"
+  organization: ""
+  description: "Contributed to libraries such as trendUI and various developer productivity tools adopted in production environments."
+  type: work
+
+- year: "2021"
+  title: "Founded ekilie Ecosystem"
+  organization: "ekilie"
+  description: "Started building the foundation for a connected suite of tools and services focused on speed, accessibility, and developer empowerment."
+  type: milestone

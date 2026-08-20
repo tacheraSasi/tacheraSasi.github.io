@@ -1,0 +1,32 @@
+{{ define "main" }}
+<main id="main" class="page">
+  <h1 class="page-title">{{ .Title }}</h1>
+  <div class="about-wrap">
+    <img class="about-photo" src="/images/me.jpg" alt="{{ .Site.Params.author }}">
+    <article class="content">{{ .Content }}</article>
+  </div>
+
+  <h2 class="section-heading">Achievements & Milestones</h2>
+  <div class="stats-grid">
+    <div class="stat"><div class="stat-value">{{ len .Site.Data.projects }}</div><div class="stat-label">Major Projects</div></div>
+    <div class="stat"><div class="stat-value">7</div><div class="stat-label">Languages</div></div>
+    <div class="stat"><div class="stat-value">8,500+</div><div class="stat-label">Commits</div></div>
+    <div class="stat"><div class="stat-value">Open Source</div><div class="stat-label">Contributor</div></div>
+    <div class="stat"><div class="stat-value">Multiple</div><div class="stat-label">Live Products</div></div>
+    <div class="stat"><div class="stat-value">Growing</div><div class="stat-label">User Base</div></div>
+  </div>
+
+  <h2 class="section-heading">Timeline</h2>
+  <div class="timeline">
+    {{ range .Site.Data.timeline }}
+    <div class="timeline-item">
+      <div class="timeline-year">{{ .year }}</div>
+      <div class="timeline-body">
+        <h3>{{ .title }}{{ with .organization }} <span class="timeline-org">&mdash; {{ . }}</span>{{ end }}</h3>
+        <p>{{ .description }}</p>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</main>
+{{ end }}

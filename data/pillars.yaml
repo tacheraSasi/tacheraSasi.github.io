@@ -1,0 +1,59 @@
+pillars:
+  - icon: code
+    title: "Creation (Programming & Engineering)"
+    description: "I love building stuff  from little npm packages to full-on systems like VintLang, Ekilisense, and Ellie. Writing code that works and keeps teaching me is the kind of craft I want to get really good at."
+    activities:
+      - "Hack on VintLang, Ekilisense, Ellie CLI, and other side tools"
+      - "Push commits often  even small cleanups or experiments"
+      - "Contribute to open-source or share snippets on GitHub"
+      - "Ship a meaningful project or library every few months"
+
+  - icon: music
+    title: "Music (Expression & Flow)"
+    description: "Music keeps me balanced. Whether it's beatboxing, a cappella, guitar, or piano, it's a way to get out of my head and just create something cool."
+    activities:
+      - "Jam on guitar or piano after work"
+      - "Practice beatboxing and a cappella riffs"
+      - "Record quick demos or harmonies when inspiration hits"
+      - "Drop at least one rough track or loop each month"
+
+  - icon: dumbbell
+    title: "Body (Strength & Presence)"
+    description: "Training keeps me sharp and steady  I don't do it for show; I do it so I can handle pressure and stay present."
+    activities:
+      - "Gym or calisthenics 4–5 times a week"
+      - "Play basketball when I need to reset my head"
+      - "Work toward progressive strength goals"
+      - "Keep sleep and meals consistent so gains don't vanish"
+
+  - icon: book
+    title: "Mind (Learning & Philosophy)"
+    description: "I feed my mind with programming deep-dives, books, and philosophy notes. I want a clear, creative head that can handle both logic and big-picture thinking."
+    activities:
+      - "Explore Go, Rust, Zig, and other tech that stretches me"
+      - "Read at least one good book a month"
+      - "Journal insights and map them to real projects"
+      - "Question my own assumptions and refine how I think"
+
+  - icon: heart
+    title: "Spirit (Faith & Solitude)"
+    description: "My faith gives me calm and direction. As a Seventh-day Adventist, I need quiet time with God to keep everything else in perspective."
+    activities:
+      - "Daily prayer and short scripture study"
+      - "Sabbath every Saturday  no grind, just reset"
+      - "Take quiet walks or sit in silence when I need clarity"
+      - "Unplug or fast occasionally to stay focused on what matters"
+
+principles:
+  - title: "Own My Path"
+    desc: "Everything here works even if I'm solo  no waiting for permission."
+  - title: "Adapt Fast"
+    desc: "If I'm traveling, I grab a portable keyboard; if I'm sore, I switch to mobility work."
+  - title: "Cross-Feed"
+    desc: "Coding sharpens discipline, music fuels creativity, training keeps focus."
+  - title: "Consistency Beats Hype"
+    desc: "I rely on steady reps, not random motivation bursts."
+  - title: "Track the Wins"
+    desc: "Commits, gym logs, and journal notes keep progress real."
+  - title: "Play the Long Game"
+    desc: "By 2030 I want solid open-source work, a body I'm proud of, music released, deep faith, and a steady mind."

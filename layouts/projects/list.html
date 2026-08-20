@@ -1,0 +1,24 @@
+{{ define "main" }}
+<main id="main" class="page">
+  <h1 class="page-title">{{ .Title }}</h1>
+  <article class="content page-intro">{{ .Content }}</article>
+  <div class="project-grid">
+    {{ range .Site.Data.projects }}
+    <div class="project-card">
+      <img class="project-thumb" src="{{ .image }}" alt="{{ .title }}" loading="lazy">
+      <div class="project-body">
+        <h3>{{ .title }}</h3>
+        <p>{{ .description }}</p>
+        <div class="project-tech">
+          {{ range .tech }}<span class="tech-badge">{{ . }}</span>{{ end }}
+        </div>
+        <div class="project-links">
+          <a class="link" href="{{ .url }}" target="_blank" rel="noopener">Live / Site</a>
+          {{ with .github }}&middot; <a class="link" href="{{ . }}" target="_blank" rel="noopener">GitHub</a>{{ end }}
+        </div>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</main>
+{{ end }}

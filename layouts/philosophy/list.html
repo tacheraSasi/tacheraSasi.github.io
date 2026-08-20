@@ -1,0 +1,33 @@
+{{ define "main" }}
+<main id="main" class="page">
+  <h1 class="page-title">{{ .Title }}</h1>
+  <article class="content page-intro">{{ .Content }}</article>
+
+  <h2 class="section-heading">The 5 Core Pillars</h2>
+  <div class="pillar-grid">
+    {{ range .Site.Data.pillars.pillars }}
+    <div class="pillar-card">
+      <h3>{{ .title }}</h3>
+      <p>{{ .description }}</p>
+      <h4>Key Activities</h4>
+      <ul>
+        {{ range .activities }}<li>{{ . }}</li>{{ end }}
+      </ul>
+    </div>
+    {{ end }}
+  </div>
+
+  <h2 class="section-heading">Principles for Living This Life</h2>
+  <div class="principle-grid">
+    {{ range .Site.Data.pillars.principles }}
+    <div class="principle-card">
+      <h3>{{ .title }}</h3>
+      <p>{{ .desc }}</p>
+    </div>
+    {{ end }}
+  </div>
+  <blockquote class="principle-quote">
+    &ldquo;This structure isn&rsquo;t rigid  it&rsquo;s a compass. Living this way ensures a life of purpose, growth, and contentment, regardless of external factors.&rdquo;
+  </blockquote>
+</main>
+{{ end }}

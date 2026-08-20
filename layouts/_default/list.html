@@ -1,0 +1,15 @@
+{{ define "main" }}
+<main id="main" class="writing-list">
+  <h1 class="page-title">{{ .Title }}</h1>
+  {{ with .Content }}<div class="page-intro">{{ . }}</div>{{ end }}
+  <ul class="essay-list">
+    {{ range .Pages }}
+    <li>
+      <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+      <p class="meta">{{ .PublishDate.Format .Site.Params.dateFormat }}</p>
+      {{ with .Summary | replaceRE `<img[^>]*>` "" | replaceRE `<p>\s*</p>` "" }}{{ . | safeHTML }}{{ end }}
+    </li>
+    {{ end }}
+  </ul>
+</main>
+{{ end }}

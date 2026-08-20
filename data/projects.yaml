@@ -1,0 +1,167 @@
+- title: BeamDrop
+  description: "Self-hosted file sharing server with S3-compatible API, web UI, shareable links, Prometheus metrics, Docker support, and HMAC-signed auth"
+  image: /images/beamdrop.png
+  tech: [Go, React, Docker]
+  url: https://github.com/ekilie/beamdrop
+  github: https://github.com/ekilie/beamdrop
+
+- title: BeamDrop Cloud
+  description: "SaaS control plane for BeamDrop  JWT auth, RBAC, instance orchestration, subscription billing, storage quotas, and process lifecycle management"
+  image: /images/beamdrop-cloud.jpeg
+  tech: [Go, Gin, GORM, PostgreSQL]
+  url: https://github.com/ekilie/beamdrop
+  github: https://github.com/ekilie/beamdrop
+
+- title: VintLang
+  description: "A powerful programming language."
+  image: /images/vintlang-dark.png
+  tech: [Golang]
+  url: https://vintlang.ekilie.com
+  github: https://github.com/tacheraSasi
+
+- title: ellie
+  description: "Revolutionized Local AI assistant (Terminal-based)"
+  image: /images/ellie.png
+  tech: [Golang, Rust]
+  url: https://github.com/tacheraSasi/ellie
+  github: https://github.com/tacheraSasi
+
+- title: ekilie
+  description: "Creator & architect of ekilie ecosystem"
+  image: /images/ekilie.png
+  tech: [Typescript, PHP, Golang, Python]
+  url: https://ekilie.com
+  github: https://github.com/tacheraSasi
+
+- title: ekiliRelay
+  description: "A free email sending API service for developers"
+  image: /images/ekilirelay.png
+  tech: [PHP, TypeScript, Golang]
+  url: https://relay.ekilie.com
+  github: https://github.com/tacheraSasi
+
+- title: Magreth
+  description: "AI therapist and friendly companion"
+  image: /images/magreth.png
+  tech: [NextJS, Postgres, Drizzlekit, TypeScript]
+  url: https://magreth.ekilie.com
+  github: https://github.com/tacheraSasi
+
+- title: ekiliSense
+  description: "AI-powered education management system"
+  image: /images/ekilisense.png
+  tech: [PHP, JS, NodeJS]
+  url: https://sense.ekilie.com
+  github: https://github.com/tacheraSasi
+
+- title: TUWK
+  description: "A rape crisis and sexual assault support system"
+  image: /images/tuwk.png
+  tech: [PHP, HTML, CSS, JS]
+  url: https://tuwk.tachera.com
+  github: https://github.com/tacheraSasi
+
+- title: Transliflow
+  description: "AI-powered collaborative translation platform"
+  image: /images/transliflow.png
+  tech: [Typescript, nextjs, prisma, mysql]
+  url: https://transliflow.vercel.app
+  github: https://github.com/tacheraSasi
+
+- title: GooferORM
+  description: "A blazingly fast, production-ready Golang ORM"
+  image: /images/gooferorm.png
+  tech: [golang]
+  url: https://gooferorm.vercel.app/
+  github: https://github.com/gooferOrm/goofer.git
+
+- title: TripWire
+  description: "Go library for error handling and utilities"
+  image: /images/tripwire.png
+  tech: [GO]
+  url: https://github.com/tacheraSasi/tripwire.git
+  github: https://github.com/tacheraSasi/tripwire.git
+
+- title: MdCli
+  description: "Go library rendering markdown in terminal"
+  image: /images/mdcli.png
+  tech: [GO]
+  url: https://github.com/tacheraSasi/mdcli.git
+  github: https://github.com/tacheraSasi/mdcli.git
+
+- title: MockWails
+  description: "Desktop app for creating mock HTTP servers"
+  image: /images/mockwails.png
+  tech: [Wails, GO, Typescript, React]
+  url: https://github.com/tacheraSasi/mockwails.git
+  github: https://github.com/tacheraSasi/mockwails.git
+
+- title: OTPX
+  description: "Lightweight flexible OTP generator for TS/JS"
+  image: /images/otpx.png
+  tech: [Typescript]
+  url: https://github.com/tacheraSasi/otpx-npm.git
+  github: https://github.com/tacheraSasi/otpx-npm.git
+
+- title: BeamDrop Mobile
+  description: "Mobile client for BeamDrop"
+  image: /images/beamdrop-rn.jpg
+  tech: [Expo, React Native]
+  url: https://github.com/tachRoutine/beamdrop-react-native.git
+  github: https://github.com/tachRoutine/beamdrop-react-native.git
+
+- title: trendUI
+  description: "Contributor @trendUI"
+  image: /images/trendui.png
+  tech: [Typescript, React Native]
+  url: https://trendui.com
+  github: https://github.com/tacheraSasi
+
+- title: JurisJs
+  description: "JavaScript Unified Reactive Interface (Contributor)"
+  image: /images/jurisjs.png
+  tech: [Javascript]
+  url: https://github.com/jurisjs/juris.git
+  github: https://github.com/jurisjs/juris.git
+
+- title: ZX - zig
+  description: "JSX but in Zig (Contributor)"
+  image: /images/zig.jpg
+  tech: [zig]
+  url: https://ziex.dev
+  github: https://github.com/nurulhudaapon/zx.git
+
+- title: MiniDB
+  description: "A relational key-value database"
+  image: /images/minidb.png
+  tech: [python]
+  url: https://github.com/tacheraSasi/minidb.git
+  github: https://github.com/tacheraSasi/minidb.git
+
+- title: PhpMVC
+  description: "PHP MVC framework for API development"
+  image: /images/phpmvc.jpg
+  tech: [PHP]
+  url: https://github.com/tacheraSasi/phpMvc.git
+  github: https://github.com/tacheraSasi/phpMvc.git
+
+- title: SimpleReact
+  description: "My simplified version of ReactJS"
+  image: /images/simplereact.png
+  tech: [JS]
+  url: https://github.com/tacheraSasi/simpleReact.git
+  github: https://github.com/tacheraSasi/simpleReact.git
+
+- title: Movebin - vint
+  description: "CLI tool to move binaries globally"
+  image: /images/movebin-vint.png
+  tech: [VINT]
+  url: https://github.com/vintlang/movebin-vint.git
+  github: https://github.com/vintlang/movebin-vint.git
+
+- title: MonkeyType Desktop
+  description: "Desktop wrapper"
+  image: /images/monkey-type.png
+  tech: [ElectronJS]
+  url: https://github.com/tacheraSasi/monkeyType-desktop.git
+  github: https://github.com/tacheraSasi/monkeyType-desktop.git

@@ -1,0 +1,25 @@
+{{ define "main" }}
+<main id="main" class="page">
+  <h1 class="page-title">{{ .Title }}</h1>
+  <article class="content page-intro">{{ .Content }}</article>
+  <div class="composition-grid">
+    {{ range .Site.Data.compositions }}
+    <div class="composition-card">
+      <img class="composition-cover" src="{{ .image }}" alt="{{ .title }}" loading="lazy">
+      <div class="composition-body">
+        <h3>{{ .title }}</h3>
+        {{ with .composer }}<p class="composition-meta">{{ . }}</p>{{ end }}
+        {{ with .description }}<p>{{ . }}</p>{{ end }}
+        <div class="composition-links">
+          {{ with .musescore }}<a class="link" href="{{ . }}" target="_blank" rel="noopener">MuseScore</a>{{ end }}
+          {{ with .pdf }}&middot; <a class="link" href="{{ . }}" target="_blank" rel="noopener">Sheet Music (PDF)</a>{{ end }}
+        </div>
+        {{ with .audio }}
+        <audio controls preload="none" src="{{ . }}"></audio>
+        {{ end }}
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</main>
+{{ end }}

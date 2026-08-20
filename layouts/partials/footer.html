@@ -1,0 +1,10 @@
+<footer id="footer">
+  <div class="name">{{ .Site.Params.author }}</div>
+  <div>&copy; {{ now.Format "2006" }} {{ .Site.Params.author }}. All rights reserved.</div>
+  <div class="links">
+    <a href="/posts/">Writing</a>
+    <a href="/index.xml">RSS</a>
+    <a href="{{ .Site.Params.social.github }}" target="_blank" rel="noopener">GitHub</a>
+    <a href="{{ .Site.Params.social.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
+  </div>
+</footer>
