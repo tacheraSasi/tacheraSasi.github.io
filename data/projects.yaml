@@ -146,97 +146,97 @@
 # --- Newly added ---
 - title: stripaudio
   description: "Fast, no-nonsense CLI for extracting audio from video files. Built in Go with Cobra and ffmpeg"
-  image: /images/stripaudio.png
+  image: /images/go-1.png
   tech: [Go]
   url: https://github.com/tacheraSasi/stripaudio
   github: https://github.com/tacheraSasi/stripaudio
 - title: Ekilie Cloud
   description: "VPS hosting, managed deployments & cloud platform (not open source) — control plane for self-hosted infrastructure"
-  image: /images/ekilie-cloud.png
+  image: /images/go-2.png
   tech: [Golang]
   url: https://ekilie.cloud
   github: https://github.com/ekilie
 - title: ekilied
   description: "Ekilie Cloud platform agent daemon — lightweight Go binary that runs on your VPS to manage sites, deployments, SSL, services and more"
-  image: /images/ekilied.png
+  image: /images/go-2.png
   tech: [Go]
   url: https://github.com/ekilie/ekilied
   github: https://github.com/ekilie/ekilied
 - title: openbiblia
   description: "Faithfully preserved. Fully searchable. Always unaltered — scans XML Bible files and stores parsed verses in SQLite"
-  image: /images/openbiblia.png
+  image: /images/go-1.png
   tech: [Go]
   url: https://github.com/ekilie/openbiblia
   github: https://github.com/ekilie/openbiblia
 - title: go-money
   description: "Preserve monetary precision in storage and arithmetic in Go — Money type built on shopspring/decimal"
-  image: /images/go-money.png
+  image: /images/go-1.png
   tech: [Go]
   url: https://github.com/tacheraSasi/go-money
   github: https://github.com/tacheraSasi/go-money
 - title: gowget
   description: "Go version of wget — systems programming project exploring HTTP clients, streaming downloads, concurrency and retries"
-  image: /images/gowget.png
+  image: /images/go-2.png
   tech: [Go]
   url: https://github.com/tacheraSasi/gowget
   github: https://github.com/tacheraSasi/gowget
 - title: notifyrun
   description: "Wraps any command and sends a desktop notification if it writes to stderr or exits non-zero"
-  image: /images/notifyrun.png
+  image: /images/go-2.png
   tech: [Go]
   url: https://github.com/tacheraSasi/notifyrun
   github: https://github.com/tacheraSasi/notifyrun
 - title: ddos-sim
   description: "DDoS attack simulator for authorized stress-testing of your own infrastructure's protection (Cloudflare, AWS Shield, etc.)"
-  image: /images/ddos-sim.png
+  image: /images/go-1.png
   tech: [Go]
   url: https://github.com/tacheraSasi/ddos-sim
   github: https://github.com/tacheraSasi/ddos-sim
 - title: bt-sleepd
   description: "Automatically disconnect Bluetooth devices when your Mac sleeps so they can reconnect instantly elsewhere"
-  image: /images/bt-sleepd.png
+  image: /images/go-1.png
   tech: [Go]
   url: https://github.com/tacheraSasi/bt-sleepd
   github: https://github.com/tacheraSasi/bt-sleepd
 - title: pgrelay
   description: "Lightweight PostgreSQL proxy and connection router written in Go"
-  image: /images/pgrelay.png
+  image: /images/go-2.png
   tech: [Go]
   url: https://github.com/tacheraSasi/pgrelay
   github: https://github.com/tacheraSasi/pgrelay
 - title: has
   description: "A tiny, blazingly fast tool to check if a binary/command exists on your machine"
-  image: /images/has.png
+  image: /images/go-2.png
   tech: [Go]
   url: https://github.com/tacheraSasi/has
   github: https://github.com/tacheraSasi/has
 - title: expobump
   description: "Fast CLI for keeping Expo app versions in sync — bumps app.json and package.json in one command"
-  image: /images/expobump.png
+  image: /images/go-1.png
   tech: [Go]
   url: https://github.com/tacheraSasi/expobump
   github: https://github.com/tacheraSasi/expobump
 - title: notify-africa-go
   description: "Golang client for notify.africa CPaaS (SMS & Email)"
-  image: /images/notify-africa-go.png
+  image: /images/go-2.png
   tech: [Go]
   url: https://github.com/tacheraSasi/notify-africa-go
   github: https://github.com/tacheraSasi/notify-africa-go
 - title: PNG2ICO
   description: "Simple command-line tool to convert PNG images to ICO format"
-  image: /images/png2ico.png
+  image: /images/go-2.png
   tech: [Go]
   url: https://github.com/tacheraSasi/PNG2ICO
   github: https://github.com/tacheraSasi/PNG2ICO
 - title: devtime
   description: "CLI app that tracks how long you have been coding"
-  image: /images/devtime.png
+  image: /images/go-1.png
   tech: [Go]
   url: https://github.com/tacheraSasi/devtime
   github: https://github.com/tacheraSasi/devtime
 - title: Ghostty
   description: "Contributor — fast, feature-rich, cross-platform terminal emulator with platform-native UI and GPU acceleration"
-  image: /images/ghostty.png
+  image: /images/zig-1.png
   tech: [Zig]
   url: https://ghostty.org
   github: https://github.com/tacheraSasi/ghostty
@@ -248,55 +248,55 @@
   github: https://github.com/tacheraSasi/nestjs-conditional-validators
 - title: mf
   description: "Manage, sync, and restore your development workspaces from a manifest — written in Zig"
-  image: /images/mf.png
+  image: /images/zig-2.jpg
   tech: [Zig]
   url: https://github.com/tacheraSasi/mf
   github: https://github.com/tacheraSasi/mf
 - title: distrox
   description: "A minimal, customizable Linux distribution built from scratch (Zig userspace planned)"
-  image: /images/distrox.png
+  image: /images/zig-2.jpg
   tech: [Zig, Linux]
   url: https://github.com/tacheraSasi/distrox
   github: https://github.com/tacheraSasi/distrox
 - title: cpwd
   description: "Lightweight cross-platform CLI written in Zig that prints the current working directory and copies it to the clipboard"
-  image: /images/cpwd.png
+  image: /images/zig-2.jpg
   tech: [Zig]
   url: https://github.com/tacheraSasi/cpwd
   github: https://github.com/tacheraSasi/cpwd
 - title: ccat
   description: "Cat with built-in clipboard support — reads a file and copies its contents to the clipboard (Zig)"
-  image: /images/ccat.png
+  image: /images/zig-1.png
   tech: [Zig]
   url: https://github.com/tacheraSasi/ccat
   github: https://github.com/tacheraSasi/ccat
 - title: stdio-zig
   description: "Buffered stdin/stdout reading and writing for Zig, without the boilerplate"
-  image: /images/stdio-zig.png
+  image: /images/zig-2.jpg
   tech: [Zig]
   url: https://github.com/tacheraSasi/stdio-zig
   github: https://github.com/tacheraSasi/stdio-zig
 - title: movebin-zig
   description: "Move binaries to a global path (e.g. /usr/local/bin) for execution from anywhere"
-  image: /images/movebin-zig.png
+  image: /images/zig-2.jpg
   tech: [Zig]
   url: https://github.com/tacheraSasi/movebin-zig
   github: https://github.com/tacheraSasi/movebin-zig
 - title: notify-africa-zig
   description: "Notify Africa Zig implementation (SMS & Email CPaaS client)"
-  image: /images/notify-africa-zig.png
+  image: /images/zig-2.jpg
   tech: [Zig]
   url: https://github.com/tacheraSasi/notify-africa-zig
   github: https://github.com/tacheraSasi/notify-africa-zig
 - title: Zig-cls
   description: "Windows CLS command recreated in Zig"
-  image: /images/zig-cls.png
+  image: /images/zig-1.png
   tech: [Zig]
   url: https://github.com/tacheraSasi/Zig-cls
   github: https://github.com/tacheraSasi/Zig-cls
 - title: uptime-cgo
   description: "Small Go CLI that uses cgo/C to obtain system uptime on macOS and Linux"
-  image: /images/uptime-cgo.png
+  image: /images/go-1.png
   tech: [Go, C]
   url: https://github.com/tacheraSasi/uptime-cgo
   github: https://github.com/tacheraSasi/uptime-cgo
