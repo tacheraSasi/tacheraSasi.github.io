@@ -2,15 +2,52 @@
 <main id="main" class="page">
   <h1 class="page-title">{{ .Title }}</h1>
   <article class="content page-intro">{{ .Content }}</article>
-  <div class="project-grid">
-    {{ range .Site.Data.projects }}
-    <div class="project-card">
+
+  {{ $projects := .Site.Data.projects }}
+
+  {{ $canon := dict
+    "golang" "Go" "go" "Go"
+    "gin" "Gin" "gorm" "GORM"
+    "postgresql" "PostgreSQL" "postgres" "PostgreSQL"
+    "rust" "Rust"
+    "typescript" "TypeScript" "ts" "TypeScript"
+    "javascript" "JavaScript" "js" "JavaScript"
+    "nodejs" "Node.js" "nextjs" "Next.js"
+    "php" "PHP" "python" "Python"
+    "html" "HTML" "css" "CSS"
+    "wails" "Wails" "react" "React" "docker" "Docker"
+    "expo" "Expo" "react native" "React Native"
+    "zig" "Zig" "vint" "VINT" "electronjs" "Electron"
+    "linux" "Linux" "c" "C"
+    "drizzlekit" "Drizzle" "prisma" "Prisma" "mysql" "MySQL"
+  }}
+
+  {{ $techSet := dict }}
+  {{ range $projects }}
+    {{ range .tech }}
+      {{ $key := lower (trim . " ") }}
+      {{ $display := index $canon $key | default $key }}
+      {{ $techSet = merge $techSet (dict $display $display) }}
+    {{ end }}
+  {{ end }}
+
+  <p class="project-count" id="project-count">{{ len $projects }} projects</p>
+  <div class="project-filters" id="project-filters" role="group" aria-label="Filter projects by language or framework">
+    <button type="button" class="filter-btn active" data-filter="all">All</button>
+    {{ range sort $techSet }}
+    <button type="button" class="filter-btn" data-filter="{{ lower . }}">{{ . }}</button>
+    {{ end }}
+  </div>
+
+  <div class="project-grid" id="project-grid">
+    {{ range $projects }}
+    <div class="project-card" data-tech='{{ range .tech }}{{ $key := lower (trim . " ") }}{{ index $canon $key | default $key }},{{ end }}'>
       <img class="project-thumb" src="{{ .image }}" alt="{{ .title }}" loading="lazy">
       <div class="project-body">
         <h3>{{ .title }}</h3>
         <p>{{ .description }}</p>
         <div class="project-tech">
-          {{ range .tech }}<span class="tech-badge">{{ . }}</span>{{ end }}
+          {{ range .tech }}<span class="tech-badge">{{ index $canon (lower (trim . " ")) | default (lower (trim . " ")) }}</span>{{ end }}
         </div>
         <div class="project-links">
           <a class="link" href="{{ .url }}" target="_blank" rel="noopener">Live / Site</a>

@@ -4,164 +4,299 @@
   tech: [Go, React, Docker]
   url: https://github.com/ekilie/beamdrop
   github: https://github.com/ekilie/beamdrop
-
 - title: BeamDrop Cloud
   description: "SaaS control plane for BeamDrop  JWT auth, RBAC, instance orchestration, subscription billing, storage quotas, and process lifecycle management"
   image: /images/beamdrop-cloud.jpeg
   tech: [Go, Gin, GORM, PostgreSQL]
   url: https://github.com/ekilie/beamdrop
   github: https://github.com/ekilie/beamdrop
-
 - title: VintLang
   description: "A powerful programming language."
   image: /images/vintlang-dark.png
   tech: [Golang]
   url: https://vintlang.ekilie.com
   github: https://github.com/tacheraSasi
-
 - title: ellie
   description: "Revolutionized Local AI assistant (Terminal-based)"
   image: /images/ellie.png
   tech: [Golang, Rust]
   url: https://github.com/tacheraSasi/ellie
   github: https://github.com/tacheraSasi
-
 - title: ekilie
   description: "Creator & architect of ekilie ecosystem"
   image: /images/ekilie.png
   tech: [Typescript, PHP, Golang, Python]
   url: https://ekilie.com
   github: https://github.com/tacheraSasi
-
 - title: ekiliRelay
   description: "A free email sending API service for developers"
   image: /images/ekilirelay.png
   tech: [PHP, TypeScript, Golang]
   url: https://relay.ekilie.com
   github: https://github.com/tacheraSasi
-
 - title: Magreth
   description: "AI therapist and friendly companion"
   image: /images/magreth.png
   tech: [NextJS, Postgres, Drizzlekit, TypeScript]
   url: https://magreth.ekilie.com
   github: https://github.com/tacheraSasi
-
 - title: ekiliSense
   description: "AI-powered education management system"
   image: /images/ekilisense.png
   tech: [PHP, JS, NodeJS]
   url: https://sense.ekilie.com
   github: https://github.com/tacheraSasi
-
 - title: TUWK
   description: "A rape crisis and sexual assault support system"
   image: /images/tuwk.png
   tech: [PHP, HTML, CSS, JS]
   url: https://tuwk.tachera.com
   github: https://github.com/tacheraSasi
-
 - title: Transliflow
   description: "AI-powered collaborative translation platform"
   image: /images/transliflow.png
   tech: [Typescript, nextjs, prisma, mysql]
   url: https://transliflow.vercel.app
   github: https://github.com/tacheraSasi
-
 - title: GooferORM
   description: "A blazingly fast, production-ready Golang ORM"
   image: /images/gooferorm.png
   tech: [golang]
   url: https://gooferorm.vercel.app/
   github: https://github.com/gooferOrm/goofer.git
-
 - title: TripWire
-  description: "Go library for error handling and utilities"
+  description: "Open source Golang utils and error handler for those who are tired of writing if err != nil over and over again"
   image: /images/tripwire.png
   tech: [GO]
-  url: https://github.com/tacheraSasi/tripwire.git
-  github: https://github.com/tacheraSasi/tripwire.git
-
+  url: https://github.com/tacheraSasi/tripwire
+  github: https://github.com/tacheraSasi/tripwire
 - title: MdCli
   description: "Go library rendering markdown in terminal"
   image: /images/mdcli.png
   tech: [GO]
   url: https://github.com/tacheraSasi/mdcli.git
   github: https://github.com/tacheraSasi/mdcli.git
-
 - title: MockWails
   description: "Desktop app for creating mock HTTP servers"
   image: /images/mockwails.png
   tech: [Wails, GO, Typescript, React]
   url: https://github.com/tacheraSasi/mockwails.git
   github: https://github.com/tacheraSasi/mockwails.git
-
 - title: OTPX
   description: "Lightweight flexible OTP generator for TS/JS"
   image: /images/otpx.png
   tech: [Typescript]
   url: https://github.com/tacheraSasi/otpx-npm.git
   github: https://github.com/tacheraSasi/otpx-npm.git
-
 - title: BeamDrop Mobile
   description: "Mobile client for BeamDrop"
   image: /images/beamdrop-rn.jpg
   tech: [Expo, React Native]
   url: https://github.com/tachRoutine/beamdrop-react-native.git
   github: https://github.com/tachRoutine/beamdrop-react-native.git
-
 - title: trendUI
   description: "Contributor @trendUI"
   image: /images/trendui.png
   tech: [Typescript, React Native]
   url: https://trendui.com
   github: https://github.com/tacheraSasi
-
 - title: JurisJs
   description: "JavaScript Unified Reactive Interface (Contributor)"
   image: /images/jurisjs.png
   tech: [Javascript]
   url: https://github.com/jurisjs/juris.git
   github: https://github.com/jurisjs/juris.git
-
 - title: ZX - zig
   description: "JSX but in Zig (Contributor)"
   image: /images/zig.jpg
   tech: [zig]
   url: https://ziex.dev
   github: https://github.com/nurulhudaapon/zx.git
-
 - title: MiniDB
   description: "A relational key-value database"
   image: /images/minidb.png
   tech: [python]
   url: https://github.com/tacheraSasi/minidb.git
   github: https://github.com/tacheraSasi/minidb.git
-
 - title: PhpMVC
   description: "PHP MVC framework for API development"
   image: /images/phpmvc.jpg
   tech: [PHP]
   url: https://github.com/tacheraSasi/phpMvc.git
   github: https://github.com/tacheraSasi/phpMvc.git
-
 - title: SimpleReact
   description: "My simplified version of ReactJS"
   image: /images/simplereact.png
   tech: [JS]
   url: https://github.com/tacheraSasi/simpleReact.git
   github: https://github.com/tacheraSasi/simpleReact.git
-
 - title: Movebin - vint
   description: "CLI tool to move binaries globally"
   image: /images/movebin-vint.png
   tech: [VINT]
   url: https://github.com/vintlang/movebin-vint.git
   github: https://github.com/vintlang/movebin-vint.git
-
 - title: MonkeyType Desktop
   description: "Desktop wrapper"
   image: /images/monkey-type.png
   tech: [ElectronJS]
   url: https://github.com/tacheraSasi/monkeyType-desktop.git
   github: https://github.com/tacheraSasi/monkeyType-desktop.git
+
+# --- Newly added ---
+- title: stripaudio
+  description: "Fast, no-nonsense CLI for extracting audio from video files. Built in Go with Cobra and ffmpeg"
+  image: /images/stripaudio.png
+  tech: [Go]
+  url: https://github.com/tacheraSasi/stripaudio
+  github: https://github.com/tacheraSasi/stripaudio
+- title: Ekilie Cloud
+  description: "VPS hosting, managed deployments & cloud platform (not open source) — control plane for self-hosted infrastructure"
+  image: /images/ekilie-cloud.png
+  tech: [Golang]
+  url: https://ekilie.cloud
+  github: https://github.com/ekilie
+- title: ekilied
+  description: "Ekilie Cloud platform agent daemon — lightweight Go binary that runs on your VPS to manage sites, deployments, SSL, services and more"
+  image: /images/ekilied.png
+  tech: [Go]
+  url: https://github.com/ekilie/ekilied
+  github: https://github.com/ekilie/ekilied
+- title: openbiblia
+  description: "Faithfully preserved. Fully searchable. Always unaltered — scans XML Bible files and stores parsed verses in SQLite"
+  image: /images/openbiblia.png
+  tech: [Go]
+  url: https://github.com/ekilie/openbiblia
+  github: https://github.com/ekilie/openbiblia
+- title: go-money
+  description: "Preserve monetary precision in storage and arithmetic in Go — Money type built on shopspring/decimal"
+  image: /images/go-money.png
+  tech: [Go]
+  url: https://github.com/tacheraSasi/go-money
+  github: https://github.com/tacheraSasi/go-money
+- title: gowget
+  description: "Go version of wget — systems programming project exploring HTTP clients, streaming downloads, concurrency and retries"
+  image: /images/gowget.png
+  tech: [Go]
+  url: https://github.com/tacheraSasi/gowget
+  github: https://github.com/tacheraSasi/gowget
+- title: notifyrun
+  description: "Wraps any command and sends a desktop notification if it writes to stderr or exits non-zero"
+  image: /images/notifyrun.png
+  tech: [Go]
+  url: https://github.com/tacheraSasi/notifyrun
+  github: https://github.com/tacheraSasi/notifyrun
+- title: ddos-sim
+  description: "DDoS attack simulator for authorized stress-testing of your own infrastructure's protection (Cloudflare, AWS Shield, etc.)"
+  image: /images/ddos-sim.png
+  tech: [Go]
+  url: https://github.com/tacheraSasi/ddos-sim
+  github: https://github.com/tacheraSasi/ddos-sim
+- title: bt-sleepd
+  description: "Automatically disconnect Bluetooth devices when your Mac sleeps so they can reconnect instantly elsewhere"
+  image: /images/bt-sleepd.png
+  tech: [Go]
+  url: https://github.com/tacheraSasi/bt-sleepd
+  github: https://github.com/tacheraSasi/bt-sleepd
+- title: pgrelay
+  description: "Lightweight PostgreSQL proxy and connection router written in Go"
+  image: /images/pgrelay.png
+  tech: [Go]
+  url: https://github.com/tacheraSasi/pgrelay
+  github: https://github.com/tacheraSasi/pgrelay
+- title: has
+  description: "A tiny, blazingly fast tool to check if a binary/command exists on your machine"
+  image: /images/has.png
+  tech: [Go]
+  url: https://github.com/tacheraSasi/has
+  github: https://github.com/tacheraSasi/has
+- title: expobump
+  description: "Fast CLI for keeping Expo app versions in sync — bumps app.json and package.json in one command"
+  image: /images/expobump.png
+  tech: [Go]
+  url: https://github.com/tacheraSasi/expobump
+  github: https://github.com/tacheraSasi/expobump
+- title: notify-africa-go
+  description: "Golang client for notify.africa CPaaS (SMS & Email)"
+  image: /images/notify-africa-go.png
+  tech: [Go]
+  url: https://github.com/tacheraSasi/notify-africa-go
+  github: https://github.com/tacheraSasi/notify-africa-go
+- title: PNG2ICO
+  description: "Simple command-line tool to convert PNG images to ICO format"
+  image: /images/png2ico.png
+  tech: [Go]
+  url: https://github.com/tacheraSasi/PNG2ICO
+  github: https://github.com/tacheraSasi/PNG2ICO
+- title: devtime
+  description: "CLI app that tracks how long you have been coding"
+  image: /images/devtime.png
+  tech: [Go]
+  url: https://github.com/tacheraSasi/devtime
+  github: https://github.com/tacheraSasi/devtime
+- title: Ghostty
+  description: "Contributor — fast, feature-rich, cross-platform terminal emulator with platform-native UI and GPU acceleration"
+  image: /images/ghostty.png
+  tech: [Zig]
+  url: https://ghostty.org
+  github: https://github.com/tacheraSasi/ghostty
+- title: nestjs-conditional-validators
+  description: "Conditional validation decorators for class-validator DTOs built for NestJS (works anywhere else too)"
+  image: /images/nestjs-conditional-validators.png
+  tech: [TypeScript]
+  url: https://github.com/tacheraSasi/nestjs-conditional-validators
+  github: https://github.com/tacheraSasi/nestjs-conditional-validators
+- title: mf
+  description: "Manage, sync, and restore your development workspaces from a manifest — written in Zig"
+  image: /images/mf.png
+  tech: [Zig]
+  url: https://github.com/tacheraSasi/mf
+  github: https://github.com/tacheraSasi/mf
+- title: distrox
+  description: "A minimal, customizable Linux distribution built from scratch (Zig userspace planned)"
+  image: /images/distrox.png
+  tech: [Zig, Linux]
+  url: https://github.com/tacheraSasi/distrox
+  github: https://github.com/tacheraSasi/distrox
+- title: cpwd
+  description: "Lightweight cross-platform CLI written in Zig that prints the current working directory and copies it to the clipboard"
+  image: /images/cpwd.png
+  tech: [Zig]
+  url: https://github.com/tacheraSasi/cpwd
+  github: https://github.com/tacheraSasi/cpwd
+- title: ccat
+  description: "Cat with built-in clipboard support — reads a file and copies its contents to the clipboard (Zig)"
+  image: /images/ccat.png
+  tech: [Zig]
+  url: https://github.com/tacheraSasi/ccat
+  github: https://github.com/tacheraSasi/ccat
+- title: stdio-zig
+  description: "Buffered stdin/stdout reading and writing for Zig, without the boilerplate"
+  image: /images/stdio-zig.png
+  tech: [Zig]
+  url: https://github.com/tacheraSasi/stdio-zig
+  github: https://github.com/tacheraSasi/stdio-zig
+- title: movebin-zig
+  description: "Move binaries to a global path (e.g. /usr/local/bin) for execution from anywhere"
+  image: /images/movebin-zig.png
+  tech: [Zig]
+  url: https://github.com/tacheraSasi/movebin-zig
+  github: https://github.com/tacheraSasi/movebin-zig
+- title: notify-africa-zig
+  description: "Notify Africa Zig implementation (SMS & Email CPaaS client)"
+  image: /images/notify-africa-zig.png
+  tech: [Zig]
+  url: https://github.com/tacheraSasi/notify-africa-zig
+  github: https://github.com/tacheraSasi/notify-africa-zig
+- title: Zig-cls
+  description: "Windows CLS command recreated in Zig"
+  image: /images/zig-cls.png
+  tech: [Zig]
+  url: https://github.com/tacheraSasi/Zig-cls
+  github: https://github.com/tacheraSasi/Zig-cls
+- title: uptime-cgo
+  description: "Small Go CLI that uses cgo/C to obtain system uptime on macOS and Linux"
+  image: /images/uptime-cgo.png
+  tech: [Go, C]
+  url: https://github.com/tacheraSasi/uptime-cgo
+  github: https://github.com/tacheraSasi/uptime-cgo

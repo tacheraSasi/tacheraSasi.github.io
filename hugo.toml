@@ -6,99 +6,100 @@ hasCJKLanguage = false
 theme = 'hugo-texify3'
 
 [markup]
-defaultMarkdownHandler = "goldmark"
+defaultMarkdownHandler = 'goldmark'
 
-  [markup.goldmark.renderer]
-  unsafe = true
+[markup.goldmark.renderer]
+unsafe = true
 
-  [markup.goldmark.extensions.passthrough]
-    enable = true
-    [markup.goldmark.extensions.passthrough.delimiters]
-      block = [['$$', '$$'], ['\\[', '\\]']]
-      inline = [['$', '$'], ['\\(', '\\)']]
+[markup.goldmark.extensions.passthrough]
+enable = true
 
-  [markup.highlight]
-  noClasses = false
-  guessSyntax = true
+[markup.goldmark.extensions.passthrough.delimiters]
+block = [['$$', '$$'], ['\\[', '\\]']]
+inline = [['$', '$'], ['\\(', '\\)']]
 
-  [markup.tableOfContents]
-  endLevel = 6
-  ordered = false
-  startLevel = 2
+[markup.highlight]
+noClasses = false
+guessSyntax = true
+
+[markup.tableOfContents]
+endLevel = 6
+ordered = false
+startLevel = 2
 
 [taxonomies]
-tags = "tags"
-categories = "categories"
+tags = 'tags'
+categories = 'categories'
 
 [[menu.main]]
-identifier = "home"
-name = "Home"
-url = "/"
+identifier = 'home'
+name = 'Home'
+url = '/'
 weight = 1
 
 [[menu.main]]
-identifier = "about"
-name = "About"
-url = "/about/"
+identifier = 'about'
+name = 'About'
+url = '/about/'
 weight = 2
 
 [[menu.main]]
-identifier = "posts"
-name = "Writings"
-url = "/posts/"
+identifier = 'posts'
+name = 'Writings'
+url = '/posts/'
 weight = 3
 
 [[menu.main]]
-identifier = "projects"
-name = "Projects"
-url = "/projects/"
+identifier = 'projects'
+name = 'Projects'
+url = '/projects/'
 weight = 4
 
 [[menu.main]]
-identifier = "music"
-name = "Music"
-url = "/music/"
+identifier = 'music'
+name = 'Music'
+url = '/music/'
 weight = 5
 
 [[menu.main]]
-identifier = "philosophy"
-name = "Philosophy"
-url = "/philosophy/"
+identifier = 'philosophy'
+name = 'Philosophy'
+url = '/philosophy/'
 weight = 6
 
 [[menu.main]]
-identifier = "contact"
-name = "Contact"
-url = "/contact/"
+identifier = 'contact'
+name = 'Contact'
+url = '/contact/'
 weight = 7
 
 [params]
-title = "Tachera W Sasi"
-author = "Tachera W Sasi"
-description = "Portfolio and blog of Tachera W Sasi  software engineer, founder of the ekilie ecosystem, creator of VintLang, and open source contributor."
-keywords = ["tachera", "sasi", "portfolio", "golang", "vintlang", "ekilie", "software engineer", "open source"]
-customCSS = ["/css/portfolio.css"]
-customJS = []
-dateFormat = "2 January 2006"
-since = "2021"
+title = 'Tachera W Sasi'
+author = 'Tachera W Sasi'
+description = 'Portfolio and blog of Tachera W Sasi  software engineer, founder of the ekilie ecosystem, creator of VintLang, and open source contributor.'
+keywords = ['tachera', 'sasi', 'portfolio', 'golang', 'vintlang', 'ekilie', 'software engineer', 'open source']
+customCSS = ['/css/portfolio.css']
+customJS = ['/js/projects.js']
+dateFormat = '2 January 2006'
+since = '2021'
 toc = true
 showWordCount = true
 showReadingTime = true
-rootFontSize = "100%"
+rootFontSize = '100%'
 math = false
 enableDuckDuckGoSearchBox = false
 numberedSubtitles = false
 
 [params.social]
-email = "tacherasasi@gmail.com"
-github = "https://github.com/tacheraSasi"
-linkedin = "https://www.linkedin.com/in/tachera-w-sasi-506307286"
+email = 'tacherasasi@gmail.com'
+github = 'https://github.com/tacheraSasi'
+linkedin = 'https://www.linkedin.com/in/tachera-w-sasi-506307286'
 
 [params.buymeacoffee]
-code = ""
+code = ''
 
 [params.commentEngine]
-code = ""
+code = ''
 
 [params.sharingbuttons]
 facebook = true
