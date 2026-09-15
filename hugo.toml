@@ -76,8 +76,8 @@ weight = 7
 [params]
 title = 'Tachera W Sasi'
 author = 'Tachera W Sasi'
-description = 'Portfolio and blog of Tachera W Sasi  software engineer, founder of the ekilie ecosystem, creator of VintLang, and open source contributor.'
-keywords = ['tachera', 'sasi', 'portfolio', 'golang', 'vintlang', 'ekilie', 'software engineer', 'open source']
+description = 'Portfolio and blog of Tachera W Sasi, backend and infra engineer building boring, reliable, self-hosted, observable production infrastructure in Go (ekilie.cloud, BeamDrop).'
+keywords = ['tachera', 'sasi', 'portfolio', 'golang', 'backend', 'infrastructure', 'self-hosted', 'observability', 'ekilie', 'beamdrop', 'software engineer', 'open source']
 customCSS = ['/css/portfolio.css']
 customJS = ['/js/projects.js']
 dateFormat = '2 January 2006'
