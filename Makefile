@@ -2,7 +2,14 @@ HUGO ?= hugo
 PORT ?= 1314
 NAME ?= my-new-post
 
-.PHONY: all build serve draft clean new
+# Match CI (.github/workflows/hugo.yaml): the theme's npm deps (postcss-cli,
+# autoprefixer) must be on PATH for Hugo's postCSS resource step.
+export PATH := $(CURDIR)/themes/hugo-texify3/node_modules/.bin:$(PATH)
+
+.PHONY: all build serve draft setup clean new
+
+setup:
+	./setup.sh
 
 all: build
 
