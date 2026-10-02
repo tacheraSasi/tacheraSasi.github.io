@@ -151,31 +151,31 @@
   url: https://github.com/tacheraSasi/stripaudio
   github: https://github.com/tacheraSasi/stripaudio
 - title: Ekilie Cloud
-  description: "VPS hosting, managed deployments & cloud platform (not open source) — control plane for self-hosted infrastructure"
+  description: "VPS hosting, managed deployments & cloud platform (not open source): control plane for self-hosted infrastructure"
   image: /images/go-2.png
   tech: [Golang]
   url: https://ekilie.cloud
   github: https://github.com/ekilie
 - title: ekilied
-  description: "Ekilie Cloud platform agent daemon — lightweight Go binary that runs on your VPS to manage sites, deployments, SSL, services and more"
+  description: "Ekilie Cloud platform agent daemon: lightweight Go binary that runs on your VPS to manage sites, deployments, SSL, services and more"
   image: /images/go-2.png
   tech: [Go]
   url: https://github.com/ekilie/ekilied
   github: https://github.com/ekilie/ekilied
 - title: openbiblia
-  description: "Faithfully preserved. Fully searchable. Always unaltered — scans XML Bible files and stores parsed verses in SQLite"
+  description: "Faithfully preserved. Fully searchable. Always unaltered: scans XML Bible files and stores parsed verses in SQLite"
   image: /images/go-1.png
   tech: [Go]
   url: https://github.com/ekilie/openbiblia
   github: https://github.com/ekilie/openbiblia
 - title: go-money
-  description: "Preserve monetary precision in storage and arithmetic in Go — Money type built on shopspring/decimal"
+  description: "Preserve monetary precision in storage and arithmetic in Go: Money type built on shopspring/decimal"
   image: /images/go-1.png
   tech: [Go]
   url: https://github.com/tacheraSasi/go-money
   github: https://github.com/tacheraSasi/go-money
 - title: gowget
-  description: "Go version of wget — systems programming project exploring HTTP clients, streaming downloads, concurrency and retries"
+  description: "Go version of wget: systems programming project exploring HTTP clients, streaming downloads, concurrency and retries"
   image: /images/go-2.png
   tech: [Go]
   url: https://github.com/tacheraSasi/gowget
@@ -211,7 +211,7 @@
   url: https://github.com/tacheraSasi/has
   github: https://github.com/tacheraSasi/has
 - title: expobump
-  description: "Fast CLI for keeping Expo app versions in sync — bumps app.json and package.json in one command"
+  description: "Fast CLI for keeping Expo app versions in sync: bumps app.json and package.json in one command"
   image: /images/go-1.png
   tech: [Go]
   url: https://github.com/tacheraSasi/expobump
@@ -235,7 +235,7 @@
   url: https://github.com/tacheraSasi/devtime
   github: https://github.com/tacheraSasi/devtime
 - title: Ghostty
-  description: "Contributor — fast, feature-rich, cross-platform terminal emulator with platform-native UI and GPU acceleration"
+  description: "Contributor: fast, feature-rich, cross-platform terminal emulator with platform-native UI and GPU acceleration"
   image: /images/zig-1.png
   tech: [Zig]
   url: https://ghostty.org
@@ -247,7 +247,7 @@
   url: https://github.com/tacheraSasi/nestjs-conditional-validators
   github: https://github.com/tacheraSasi/nestjs-conditional-validators
 - title: mf
-  description: "Manage, sync, and restore your development workspaces from a manifest — written in Zig"
+  description: "Manage, sync, and restore your development workspaces from a manifest written in Zig"
   image: /images/zig-2.jpg
   tech: [Zig]
   url: https://github.com/tacheraSasi/mf
@@ -265,7 +265,7 @@
   url: https://github.com/tacheraSasi/cpwd
   github: https://github.com/tacheraSasi/cpwd
 - title: ccat
-  description: "Cat with built-in clipboard support — reads a file and copies its contents to the clipboard (Zig)"
+  description: "Cat with built-in clipboard support: reads a file and copies its contents to the clipboard (Zig)"
   image: /images/zig-1.png
   tech: [Zig]
   url: https://github.com/tacheraSasi/ccat

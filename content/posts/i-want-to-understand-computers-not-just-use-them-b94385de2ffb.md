@@ -1,7 +1,7 @@
 ---
 title: "I Want to Understand Computers, Not Just Use Them"
 date: 2026-10-02
-summary: "After years of building abstractions, I want to understand the machine underneath them \u2014 the processes, memory, networking, and failure modes that frameworks hide."
+summary: "After years of building abstractions, I want to understand the machine underneath them: the processes, memory, networking, and failure modes that frameworks hide."
 draft: false
 medium: "https://medium.com/@tacherasasi/i-want-to-understand-computers-not-just-use-them-b94385de2ffb?source=rss-9a41d7ec29fb------2"
 tags: ["tachera", "software-engineering", "systems-programming"]

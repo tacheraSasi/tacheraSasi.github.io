@@ -1,7 +1,7 @@
 ---
 title: "Why io.Copy Is One of Go's Most Powerful Functions"
 date: 2026-05-04
-summary: "io.Copy is deceptively powerful \u2014 it sits at the center of proxies, SSH tunnels, and streaming systems. Here's how it works and why it matters."
+summary: "io.Copy is deceptively powerful: it sits at the center of proxies, SSH tunnels, and streaming systems. Here's how it works and why it matters."
 draft: false
 medium: "https://medium.com/@tacherasasi/why-io-copy-is-one-of-gos-most-powerful-functions-9222940b2358?source=rss-9a41d7ec29fb------2"
 tags: ["design-pattern-in-golang", "io"]

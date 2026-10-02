@@ -1,7 +1,7 @@
 ---
 title: "Why Most Engineers Shouldn\u2019t Build Distributed Systems (And Why I Did Anyway)"
 date: 2026-03-05
-summary: "Distributed systems are fascinating \u2014 and one of the fastest ways to create massive complexity. Why most engineers shouldn't build them, and why I did anyway."
+summary: "Distributed systems are fascinating, and one of the fastest ways to create massive complexity. Why most engineers shouldn't build them, and why I did anyway."
 draft: false
 medium: "https://medium.com/@tacherasasi/why-most-engineers-shouldnt-build-distributed-systems-and-why-i-did-anyway-20e6ace3f18e?source=rss-9a41d7ec29fb------2"
 ---

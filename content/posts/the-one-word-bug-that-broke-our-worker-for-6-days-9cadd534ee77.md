@@ -1,7 +1,7 @@
 ---
 title: "The One-Word Bug That Broke Our Worker for 6 Days"
 date: 2026-04-28
-summary: "For six days, our system was lying to us \u2014 not crashing, just quietly doing nothing. The cause? One wrong word in a shell script."
+summary: "For six days, our system was lying to us, not crashing, just quietly doing nothing. The cause? One wrong word in a shell script."
 draft: false
 medium: "https://medium.com/@tacherasasi/the-one-word-bug-that-broke-our-worker-for-6-days-9cadd534ee77?source=rss-9a41d7ec29fb------2"
 tags: ["devops", "docker", "golang"]

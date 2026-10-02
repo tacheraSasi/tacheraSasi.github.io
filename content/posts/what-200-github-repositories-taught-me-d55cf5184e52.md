@@ -1,7 +1,7 @@
 ---
 title: "What 200+ GitHub Repositories Taught Me"
 date: 2026-03-10
-summary: "After building 200+ repositories, the most valuable lessons weren't about architecture \u2014 they were the fundamentals that make projects useful."
+summary: "After building 200+ repositories, the most valuable lessons weren't about architecture; they were the fundamentals that make projects useful."
 draft: false
 medium: "https://medium.com/@tacherasasi/what-200-github-repositories-taught-me-d55cf5184e52?source=rss-9a41d7ec29fb------2"
 tags: ["tachera", "software-engineering", "software-development"]
