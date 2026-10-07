@@ -1,5 +1,5 @@
 ---
-title: "Music — Original Compositions by Tachera Sasi"
+title: "Music, Original Compositions by Tachera Sasi"
 description: "Original music compositions by Tachera Sasi: sheet music, recordings and MuseScore scores. Pieces about sadness, love, guilt and happiness."
 keywords: ["original compositions", "sheet music", "musescore", "tachera sasi music"]
 ---

@@ -46,7 +46,7 @@
     "TUWK" "/projects/tuwk/"
   }}
 
-  <p class="project-count" id="project-count">{{ len $projects }} projects — production systems, developer tools and open source by {{ .Site.Params.author }}.</p>
+  <p class="project-count" id="project-count">{{ len $projects }} projects, production systems, developer tools and open source by {{ .Site.Params.author }}.</p>
   <div class="project-filters" id="project-filters" role="group" aria-label="Filter projects by language or framework">
     <button type="button" class="filter-btn active" data-filter="all">All</button>
     {{ range sort $techSet }}
@@ -58,7 +58,7 @@
     {{ range $projects }}
     {{ $study := index $caseStudies .title }}
     <div class="project-card" data-tech='{{ range .tech }}{{ $key := lower (trim . " ") }}{{ index $canon $key | default $key }},{{ end }}'>
-      <img class="project-thumb" src="{{ .image }}" alt="{{ .title }} — {{ .description | truncate 90 }}" loading="lazy" width="640" height="320">
+      <img class="project-thumb" src="{{ .image }}" alt="{{ .title }}, {{ .description | truncate 90 }}" loading="lazy" width="640" height="320">
       <div class="project-body">
         <h2>{{ .title }}</h2>
         <p>{{ .description }}</p>

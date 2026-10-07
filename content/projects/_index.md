@@ -1,5 +1,5 @@
 ---
-title: "Projects — Production Systems, Dev Tools and Open Source"
+title: "Projects, Production Systems, Dev Tools and Open Source"
 description: "Projects by Tachera W Sasi: BeamDrop self-hosted file sharing, ekilie.cloud VPS hosting, VintLang programming language, Go libraries, Zig tools and more."
 keywords: ["beamdrop", "ekilie cloud", "vintlang", "go projects", "open source portfolio", "self-hosted projects"]
 ---

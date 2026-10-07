@@ -1,5 +1,5 @@
 ---
-title: "About Tachera W Sasi — Backend & Infrastructure Engineer"
+title: "About Tachera W Sasi, Backend & Infrastructure Engineer"
 description: "Tachera W Sasi is a backend and infrastructure engineer (Go) building ekilie.cloud and BeamDrop. Lead engineer at AkiliSoft, creator of VintLang, open source contributor."
 keywords: ["tachera sasi", "backend engineer", "golang engineer", "infrastructure engineer", "vintlang creator"]
 ---

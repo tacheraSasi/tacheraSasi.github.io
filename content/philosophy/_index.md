@@ -1,5 +1,5 @@
 ---
-title: "Philosophy — Five Pillars for Building and Living"
+title: "Philosophy, Five Pillars for Building and Living"
 description: "The personal operating system of Tachera W Sasi: five pillars for building software, staying fit, feeding the mind, playing music and staying grounded."
 keywords: ["engineering philosophy", "personal operating system", "builder mindset", "five pillars"]
 ---

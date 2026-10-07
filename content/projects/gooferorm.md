@@ -1,5 +1,5 @@
 ---
-title: "GooferORM — A Blazing-Fast Go ORM"
+title: "GooferORM, A Blazing-Fast Go ORM"
 slug: "gooferorm"
 date: 2025-09-01
 draft: false

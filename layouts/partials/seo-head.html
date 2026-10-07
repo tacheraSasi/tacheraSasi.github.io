@@ -76,7 +76,7 @@
 <meta property="og:description" content="{{ $desc }}">
 <meta property="og:url" content="{{ $canonical }}">
 <meta property="og:image" content="{{ $ogImageAbs }}">
-<meta property="og:image:alt" content="{{ if .IsHome }}{{ $site.Params.author }} — {{ $site.Params.authorJobTitle }}{{ else }}{{ .Title | plainify | htmlUnescape }}{{ end }}">
+<meta property="og:image:alt" content="{{ if .IsHome }}{{ $site.Params.author }}, {{ $site.Params.authorJobTitle }}{{ else }}{{ .Title | plainify | htmlUnescape }}{{ end }}">
 {{- if $isArticle }}
 <meta property="og:type" content="article">
 <meta property="article:published_time" content="{{ .PublishDate.Format "2006-01-02T15:04:05Z07:00" }}">
@@ -94,7 +94,7 @@
 <meta name="twitter:title" content="{{ if .IsHome }}{{ $site.Title }}{{ else }}{{ .Title | plainify | htmlUnescape }}{{ end }}">
 <meta name="twitter:description" content="{{ $desc }}">
 <meta name="twitter:image" content="{{ $ogImageAbs }}">
-<meta name="twitter:image:alt" content="{{ if .IsHome }}{{ $site.Params.author }} — {{ $site.Params.authorJobTitle }}{{ else }}{{ .Title | plainify | htmlUnescape }}{{ end }}">
+<meta name="twitter:image:alt" content="{{ if .IsHome }}{{ $site.Params.author }}, {{ $site.Params.authorJobTitle }}{{ else }}{{ .Title | plainify | htmlUnescape }}{{ end }}">
 
 <!-- Theme / icons -->
 <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">

@@ -1,5 +1,5 @@
 ---
-title: "TripWire — Go Error-Handling Utilities"
+title: "TripWire, Go Error-Handling Utilities"
 slug: "tripwire"
 date: 2025-07-01
 draft: false

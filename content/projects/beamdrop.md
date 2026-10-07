@@ -1,5 +1,5 @@
 ---
-title: "BeamDrop — Self-Hosted File Sharing in Go"
+title: "BeamDrop, Self-Hosted File Sharing in Go"
 slug: "beamdrop"
 date: 2026-02-20
 draft: false

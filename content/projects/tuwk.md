@@ -1,5 +1,5 @@
 ---
-title: "TUWK — Crisis Support Platform"
+title: "TUWK, Crisis Support Platform"
 slug: "tuwk"
 date: 2023-08-01
 draft: false

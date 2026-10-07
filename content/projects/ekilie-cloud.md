@@ -1,5 +1,5 @@
 ---
-title: "Ekilie Cloud — VPS Hosting and Managed Deployments"
+title: "Ekilie Cloud, VPS Hosting and Managed Deployments"
 slug: "ekilie-cloud"
 date: 2026-01-15
 draft: false

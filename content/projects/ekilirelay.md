@@ -1,5 +1,5 @@
 ---
-title: "ekiliRelay — Free Email API for Developers"
+title: "ekiliRelay, Free Email API for Developers"
 slug: "ekilirelay"
 date: 2024-08-01
 draft: false

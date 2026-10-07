@@ -1,5 +1,5 @@
 ---
-title: "Transliflow — AI Collaborative Translation Platform"
+title: "Transliflow, AI Collaborative Translation Platform"
 slug: "transliflow"
 date: 2024-05-01
 draft: false

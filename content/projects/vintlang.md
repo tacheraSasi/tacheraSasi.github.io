@@ -1,5 +1,5 @@
 ---
-title: "VintLang — A Programming Language Built in Go"
+title: "VintLang, A Programming Language Built in Go"
 slug: "vintlang"
 date: 2025-06-01
 draft: false

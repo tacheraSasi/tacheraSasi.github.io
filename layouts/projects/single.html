@@ -4,7 +4,7 @@
   <h1 class="page-title">{{ .Title }}</h1>
   {{ with .Params.subtitle }}<p class="meta">{{ . }}</p>{{ end }}
   {{ with .Params.image }}
-  <img class="post-cover" src="{{ . }}" alt="{{ $.Title }} — {{ $.Params.description | default $.Title | truncate 90 }}" loading="eager" width="1200" height="630">
+  <img class="post-cover" src="{{ . }}" alt="{{ $.Title }}, {{ $.Params.description | default $.Title | truncate 90 }}" loading="eager" width="1200" height="630">
   {{ end }}
   <p class="meta">
     {{ with .Params.stack }}Built with {{ delimit . ", " }} &middot;{{ end }}

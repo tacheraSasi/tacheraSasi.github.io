@@ -1,5 +1,5 @@
 ---
-title: "ekilied — Platform Agent Daemon for Ekilie Cloud"
+title: "ekilied, Platform Agent Daemon for Ekilie Cloud"
 slug: "ekilied"
 date: 2026-01-15
 draft: false

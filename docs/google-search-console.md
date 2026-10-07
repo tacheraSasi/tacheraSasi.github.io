@@ -59,7 +59,7 @@ New/changed pages can take days to be discovered. Speed it up:
    - `https://tacherasasi.github.io/projects/beamdrop/`
    - `https://tacherasasi.github.io/projects/ekilie-cloud/`
    - `https://tacherasasi.github.io/projects/vintlang/`
-   - your 2–3 strongest posts.
+   - your 2-3 strongest posts.
 3. Internal links do the rest: every post links to siblings
    ("Keep reading"), the home page links to featured projects,
    and section pages cross-link each other.
@@ -73,9 +73,9 @@ New/changed pages can take days to be discovered. Speed it up:
 |---------------|------------------------------------------------------------|
 | `title`       | One H1 per page, under ~60 chars, keyword near the front   |
 | `description` | ~150 chars, plain sentence, no quotes/HTML                 |
-| `tags`        | 4–7 lowercase tags, reuse existing ones (`/tags/`)         |
+| `tags`        | 4-7 lowercase tags, reuse existing ones (`/tags/`)         |
 | `categories`  | 1 value from: Backend, Systems Programming, Distributed Systems, DevOps, Web Development, Career |
-| `keywords`    | 3–6 search phrases                                         |
+| `keywords`    | 3-6 search phrases                                         |
 | `images`      | OG image path, must exist in `static/images/`              |
 | `lastmod`     | bump whenever you edit the body                            |
 

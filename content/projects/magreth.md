@@ -1,5 +1,5 @@
 ---
-title: "Magreth — AI Therapist and Companion"
+title: "Magreth, AI Therapist and Companion"
 slug: "magreth"
 date: 2024-11-01
 draft: false
