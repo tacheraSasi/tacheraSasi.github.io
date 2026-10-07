@@ -1,9 +1,18 @@
 ---
 title: "Escape Analysis in Go: Where Does Your Data Actually Live?"
 date: 2026-02-20
-summary: "How does Go decide whether your variables live on the stack or the heap? Understanding escape analysis can help you write faster Go code."
+lastmod: 2026-02-20
 draft: false
+author: "Tachera W Sasi"
+description: "Go escape analysis decides whether your variables live on the stack or the heap. Learn how it works and how to write faster Go code."
+summary: "How does Go decide whether your variables live on the stack or the heap? Understanding escape analysis can help you write faster Go code."
+tags: ["go", "golang", "escape-analysis", "performance", "memory", "backend"]
+categories: ["Backend"]
+keywords: ["go escape analysis", "golang stack vs heap", "go performance"]
+images: ["/images/go-2.png"]
 medium: "https://medium.com/@tacherasasi/escape-analysis-in-go-where-does-your-data-actually-live-d1a0430003d8?source=rss-9a41d7ec29fb------2"
+---
+---2"
 ---
 
 ![](https://cdn-images-1.medium.com/max/300/1*S0qxt-hT88hXkOFCj-nSBw.jpeg)

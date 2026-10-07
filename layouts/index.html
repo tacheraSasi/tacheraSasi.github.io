@@ -2,14 +2,15 @@
 <main id="main" class="home">
 
   <div class="intro">
-    <img src="/images/me.jpg" alt="{{ .Site.Params.author }}" width="128" height="160">
+    <img src="/images/me.jpg" alt="Portrait of {{ .Site.Params.author }}, {{ .Site.Params.authorJobTitle }}" width="128" height="160" fetchpriority="high">
     <div>
       <h1>Hi, I&rsquo;m {{ .Site.Params.author }}</h1>
       <p class="role">Backend &amp; Infra Engineer</p>
       <p class="tagline">Go &middot; systems &middot; self-hosted &middot; observability</p>
       <ul class="social">
-        <li><a href="{{ .Site.Params.social.github }}" target="_blank" rel="noopener">GitHub</a></li>
-        <li><a href="{{ .Site.Params.social.linkedin }}" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="{{ .Site.Params.social.github }}" target="_blank" rel="noopener me">GitHub</a></li>
+        <li><a href="{{ .Site.Params.social.linkedin }}" target="_blank" rel="noopener me">LinkedIn</a></li>
+        <li><a href="{{ .Site.Params.social.medium }}" target="_blank" rel="noopener me">Medium</a></li>
       </ul>
     </div>
   </div>
@@ -27,7 +28,7 @@
 
   <p>
     I care about production infrastructure that is observable, self-hostable,
-    and doesn&rsquo;t wake you at 3am. 
+    and doesn&rsquo;t wake you at 3am.
     <br>Creator of
     <a href="https://vintlang.ekilie.com" target="_blank" rel="noopener">VintLang</a>.
     <br>One of the languages ekilie cloud runs on
@@ -36,21 +37,47 @@
   <p class="page-links">
     <a href="/about/">About</a> &middot;
     <a href="/projects/">Projects</a> &middot;
+    <a href="/posts/">Writing</a> &middot;
     <a href="/music/">Music</a> &middot;
     <a href="/philosophy/">Philosophy</a>
   </p>
 
   <h2 class="section-heading">Writing</h2>
   <ul class="essay-list">
-    {{ range first 5 (where site.RegularPages "Section" "posts") }}
+    {{ range first 5 (where site.RegularPages "Section" "posts").ByPublishDate.Reverse }}
     <li>
-      <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-      <p class="meta">{{ .PublishDate.Format .Site.Params.dateFormat }}</p>
-      {{ with .Summary | replaceRE `<img[^>]*>` "" | replaceRE `<p>\s*</p>` "" }}{{ . | safeHTML }}{{ end }}
+      <article>
+        <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+        <p class="meta"><time datetime="{{ .PublishDate.Format "2006-01-02" }}">{{ .PublishDate.Format .Site.Params.dateFormat }}</time> &middot; {{ .ReadingTime }} min read</p>
+        {{ with .Params.description | default (.Summary | plainify | truncate 160) }}<p>{{ . }}</p>{{ end }}
+      </article>
     </li>
     {{ end }}
   </ul>
   <p><a href="/posts/">All writing &rarr;</a></p>
+
+  <h2 class="section-heading">Featured projects</h2>
+  <ul class="essay-list">
+    <li>
+      <article>
+        <h3><a href="/projects/beamdrop/">BeamDrop — self-hosted file sharing in Go</a></h3>
+        <p>Single-binary file server with an S3-compatible API, shareable links, WebSocket stats and Prometheus metrics.</p>
+      </article>
+    </li>
+    <li>
+      <article>
+        <h3><a href="/projects/ekilie-cloud/">ekilie.cloud — VPS hosting &amp; managed deployments</a></h3>
+        <p>Control plane for self-hosted infrastructure: sites, deployments, SSL and process lifecycle on your own VPS.</p>
+      </article>
+    </li>
+    <li>
+      <article>
+        <h3><a href="/projects/vintlang/">VintLang — a programming language built in Go</a></h3>
+        <p>A practical language project exploring interpreters, tooling and developer experience.</p>
+      </article>
+    </li>
+  </ul>
+  <p><a href="/projects/">All projects &rarr;</a></p>
 
 </main>
 {{ end }}

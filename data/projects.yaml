@@ -11,31 +11,31 @@
   url: https://github.com/ekilie/beamdrop
   github: https://github.com/ekilie/beamdrop
 - title: VintLang
-  description: "A powerful programming language."
+  description: "VintLang is a programming language built in Go: interpreter, tooling and growing ecosystem for practical scripting and learning language design"
   image: /images/vintlang-dark.png
   tech: [Golang]
   url: https://vintlang.ekilie.com
   github: https://github.com/tacheraSasi
 - title: ellie
-  description: "Revolutionized Local AI assistant (Terminal-based)"
+  description: "Ellie is a terminal-based local AI assistant: private, offline-capable help in your shell built with Go and Rust"
   image: /images/ellie.png
   tech: [Golang, Rust]
   url: https://github.com/tacheraSasi/ellie
   github: https://github.com/tacheraSasi
 - title: ekilie
-  description: "Creator & architect of ekilie ecosystem"
+  description: "ekilie.com is the home of the ekilie ecosystem: creator and architect of its platforms, APIs and developer tools"
   image: /images/ekilie.png
   tech: [Typescript, PHP, Golang, Python]
   url: https://ekilie.com
   github: https://github.com/tacheraSasi
 - title: ekiliRelay
-  description: "A free email sending API service for developers"
+  description: "ekiliRelay is a free email sending API for developers: simple REST API, SMTP compatible, built for transactional mail"
   image: /images/ekilirelay.png
   tech: [PHP, TypeScript, Golang]
   url: https://relay.ekilie.com
   github: https://github.com/tacheraSasi
 - title: Magreth
-  description: "AI therapist and friendly companion"
+  description: "Magreth is an AI therapist and friendly companion: supportive conversations, journaling and mental wellness tools"
   image: /images/magreth.png
   tech: [NextJS, Postgres, Drizzlekit, TypeScript]
   url: https://magreth.ekilie.com
@@ -47,7 +47,7 @@
   url: https://sense.ekilie.com
   github: https://github.com/tacheraSasi
 - title: TUWK
-  description: "A rape crisis and sexual assault support system"
+  description: "TUWK is a rape crisis and sexual assault support platform: safe reporting, resources and support for survivors"
   image: /images/tuwk.png
   tech: [PHP, HTML, CSS, JS]
   url: https://tuwk.tachera.com
@@ -95,25 +95,25 @@
   url: https://github.com/tachRoutine/beamdrop-react-native.git
   github: https://github.com/tachRoutine/beamdrop-react-native.git
 - title: trendUI
-  description: "Contributor @trendUI"
+  description: "trendUI is a modern React Native component library. Open source contributor: components, docs and fixes used in production apps"
   image: /images/trendui.png
   tech: [Typescript, React Native]
   url: https://trendui.com
   github: https://github.com/tacheraSasi
 - title: JurisJs
-  description: "JavaScript Unified Reactive Interface (Contributor)"
+  description: "JurisJs (JavaScript Unified Reactive Interface) is a reactive UI library. Open source contributor to core and examples"
   image: /images/jurisjs.png
   tech: [Javascript]
   url: https://github.com/jurisjs/juris.git
   github: https://github.com/jurisjs/juris.git
 - title: ZX - zig
-  description: "JSX but in Zig (Contributor)"
+  description: "ZX brings JSX-style component syntax to Zig. Open source contributor to the ziex.dev ecosystem"
   image: /images/zig.jpg
   tech: [zig]
   url: https://ziex.dev
   github: https://github.com/nurulhudaapon/zx.git
 - title: MiniDB
-  description: "A relational key-value database"
+  description: "MiniDB is a relational key-value database written in Python: parsing, storage engine and query experiments"
   image: /images/minidb.png
   tech: [python]
   url: https://github.com/tacheraSasi/minidb.git
@@ -125,7 +125,7 @@
   url: https://github.com/tacheraSasi/phpMvc.git
   github: https://github.com/tacheraSasi/phpMvc.git
 - title: SimpleReact
-  description: "My simplified version of ReactJS"
+  description: "SimpleReact is a from-scratch reimplementation of ReactJS: virtual DOM, hooks and reconciler written to learn how React works"
   image: /images/simplereact.png
   tech: [JS]
   url: https://github.com/tacheraSasi/simpleReact.git
@@ -137,7 +137,7 @@
   url: https://github.com/vintlang/movebin-vint.git
   github: https://github.com/vintlang/movebin-vint.git
 - title: MonkeyType Desktop
-  description: "Desktop wrapper"
+  description: "MonkeyType Desktop wraps the Monkeytype typing app as a distraction-free desktop app via Electron"
   image: /images/monkey-type.png
   tech: [ElectronJS]
   url: https://github.com/tacheraSasi/monkeyType-desktop.git
@@ -242,7 +242,7 @@
   github: https://github.com/tacheraSasi/ghostty
 - title: nestjs-conditional-validators
   description: "Conditional validation decorators for class-validator DTOs built for NestJS (works anywhere else too)"
-  image: /images/nestjs-conditional-validators.png
+  image: /images/trendui.png
   tech: [TypeScript]
   url: https://github.com/tacheraSasi/nestjs-conditional-validators
   github: https://github.com/tacheraSasi/nestjs-conditional-validators

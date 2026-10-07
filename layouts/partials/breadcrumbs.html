@@ -1,0 +1,16 @@
+{{/* Visible breadcrumb trail for UX + internal linking. */}}
+{{- if not .IsHome }}
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+  <ol>
+    <li><a href="{{ "/" | absURL }}">Home</a></li>
+    {{- with .Section }}
+    <li aria-hidden="true">/</li>
+    <li><a href="{{ (printf "/%s/" .) | absURL }}">{{ humanize . }}</a></li>
+    {{- end }}
+    {{- if .IsPage }}
+    <li aria-hidden="true">/</li>
+    <li aria-current="page">{{ .Title | truncate 60 }}</li>
+    {{- end }}
+  </ol>
+</nav>
+{{- end }}

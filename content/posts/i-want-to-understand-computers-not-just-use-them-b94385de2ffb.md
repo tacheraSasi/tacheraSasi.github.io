@@ -1,9 +1,18 @@
 ---
 title: "I Want to Understand Computers, Not Just Use Them"
 date: 2026-10-02
-summary: "After years of building abstractions, I want to understand the machine underneath them: the processes, memory, networking, and failure modes that frameworks hide."
+lastmod: 2026-10-02
 draft: false
+author: "Tachera W Sasi"
+description: "After years of shipping abstractions, I'm going deeper: processes, memory, networking and failure modes that frameworks hide from you."
+summary: "After years of building abstractions, I want to understand the machine underneath them: the processes, memory, networking, and failure modes that frameworks hide."
+tags: ["systems-programming", "software-engineering", "computers", "learning", "backend"]
+categories: ["Systems Programming"]
+keywords: ["understand computers", "systems programming fundamentals"]
+images: ["/images/me.jpg"]
 medium: "https://medium.com/@tacherasasi/i-want-to-understand-computers-not-just-use-them-b94385de2ffb?source=rss-9a41d7ec29fb------2"
+---
+---2"
 tags: ["tachera", "software-engineering", "systems-programming"]
 ---
 

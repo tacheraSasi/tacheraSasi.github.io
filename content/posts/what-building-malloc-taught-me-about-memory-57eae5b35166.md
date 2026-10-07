@@ -1,9 +1,18 @@
 ---
 title: "What Building malloc Taught Me About Memory"
 date: 2026-03-13
-summary: "I implemented a tiny version of malloc to understand what really happens under the hood. The result was surprisingly simple and incredibly educational."
+lastmod: 2026-03-13
 draft: false
+author: "Tachera W Sasi"
+description: "I wrote a tiny malloc in C to learn how memory really works. Surprisingly simple, and it changed how I think about every allocation."
+summary: "I implemented a tiny version of malloc to understand what really happens under the hood. The result was surprisingly simple and incredibly educational."
+tags: ["c", "memory", "malloc", "systems-programming", "low-level"]
+categories: ["Systems Programming"]
+keywords: ["write malloc c", "how malloc works", "memory allocation tutorial"]
+images: ["/images/me.jpg"]
 medium: "https://medium.com/@tacherasasi/what-building-malloc-taught-me-about-memory-57eae5b35166?source=rss-9a41d7ec29fb------2"
+---
+---2"
 tags: ["clang"]
 ---
 

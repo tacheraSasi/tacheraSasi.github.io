@@ -1,9 +1,18 @@
 ---
 title: "Comptime vs. Macros: Metaprogramming in Zig and Rust"
 date: 2025-11-10
-summary: "Zig's comptime and Rust's macros both do compile-time metaprogramming, but very differently. A comparison with examples."
+lastmod: 2025-11-10
 draft: false
+author: "Tachera W Sasi"
+description: "Zig comptime vs Rust macros: how each language does compile-time metaprogramming, with examples of when to reach for each approach."
+summary: "Zig's comptime and Rust's macros both do compile-time metaprogramming, but very differently. A comparison with examples."
+tags: ["zig", "rust", "comptime", "macros", "metaprogramming", "systems-programming"]
+categories: ["Systems Programming"]
+keywords: ["zig comptime", "rust macros", "metaprogramming zig rust"]
+images: ["/images/zig-1.png"]
 medium: "https://medium.com/@tacherasasi/comptime-vs-macros-metaprogramming-in-zig-and-rust-511fedcdcffe?source=rss-9a41d7ec29fb------2"
+---
+---2"
 tags: ["rust-macros", "zig", "rust", "comptime"]
 ---
 

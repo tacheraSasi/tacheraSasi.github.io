@@ -1,9 +1,18 @@
 ---
 title: "The One-Word Bug That Broke Our Worker for 6 Days"
 date: 2026-04-28
-summary: "For six days, our system was lying to us, not crashing, just quietly doing nothing. The cause? One wrong word in a shell script."
+lastmod: 2026-04-28
 draft: false
+author: "Tachera W Sasi"
+description: "Our background worker silently did nothing for six days. No crash, no alert. The root cause was one wrong word in a shell script."
+summary: "For six days, our system was lying to us, not crashing, just quietly doing nothing. The cause? One wrong word in a shell script."
+tags: ["debugging", "devops", "go", "golang", "docker", "reliability", "incident"]
+categories: ["DevOps"]
+keywords: ["background worker debugging", "shell script bug", "silent failure devops"]
+images: ["/images/go-2.png"]
 medium: "https://medium.com/@tacherasasi/the-one-word-bug-that-broke-our-worker-for-6-days-9cadd534ee77?source=rss-9a41d7ec29fb------2"
+---
+---2"
 tags: ["devops", "docker", "golang"]
 ---
 

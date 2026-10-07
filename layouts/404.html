@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page not found | {{ .Site.Params.title }}</title>
+  <meta name="description" content="The page you are looking for does not exist. Explore writing, projects and about instead.">
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="{{ .Site.BaseURL }}">
+  <link rel="icon" href="{{ "favicon.svg" | absURL }}" type="image/svg+xml">
+</head>
+<body>
+  <div id="wrapper">
+    {{ partial "header.html" . }}
+    <main id="main" class="page">
+      <h1 class="page-title">Lost? This page doesn&rsquo;t exist.</h1>
+      <p>The link you followed is broken or the page moved. Start from somewhere useful:</p>
+      <ul>
+        <li><a href="/">Home</a> — who I am and what I build</li>
+        <li><a href="/posts/">Writing</a> — essays on Go, backends and systems</li>
+        <li><a href="/projects/">Projects</a> — BeamDrop, ekilie.cloud, VintLang and more</li>
+        <li><a href="/about/">About</a> — background and timeline</li>
+        <li><a href="/contact/">Contact</a> — collaborate or say hi</li>
+      </ul>
+    </main>
+    {{ partial "footer.html" . }}
+  </div>
+</body>
+</html>

@@ -365,15 +365,23 @@ def main() -> int:
         tags = [c.text.strip() for c in item.findall("category") if c.text and c.text.strip()]
 
     post_id = slug.rsplit("-", 1)[-1] if "-" in slug else ""
+    pub_day = parse_date(item.findtext("pubDate")).isoformat()
+    description = truncate(summary, 160)
 
     out = (
         "---\n"
         f"title: {yaml_string(title)}\n"
-        f"date: {parse_date(item.findtext('pubDate')).isoformat()}\n"
-        f"summary: {yaml_string(summary)}\n"
+        f"date: {pub_day}\n"
+        f"lastmod: {pub_day}\n"
         "draft: false\n"
-        f"medium: {yaml_string(link)}\n"
+        'author: "Tachera W Sasi"\n'
+        f"description: {yaml_string(description)}\n"
+        f"summary: {yaml_string(summary)}\n"
         f"tags: [{', '.join(yaml_string(t) for t in tags)}]\n"
+        "categories: []\n"
+        "keywords: []\n"
+        'images: ["/images/me.jpg"]\n'
+        f"medium: {yaml_string(link)}\n"
         "---\n\n"
         f"{md}"
     )

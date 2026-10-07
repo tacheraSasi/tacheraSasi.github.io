@@ -1,9 +1,19 @@
-baseURL = 'https://tacheraSasi.github.io/'
+baseURL = 'https://tacherasasi.github.io/'
+defaultContentLanguage = 'en'
 locale = 'en-us'
-title = 'Tachera W Sasi'
+title = 'Tachera W Sasi — Backend & Infra Engineer (Go, Self-Hosted, Observability)'
 enableRobotsTXT = true
+enableGitInfo = true
 hasCJKLanguage = false
 theme = 'hugo-texify3'
+paginate = 10
+paginatePath = 'page'
+enableEmoji = false
+pygmentsUseClasses = true
+
+# Canonical + multilingual-safe language setting
+[languages.en]
+  weight = 1
 
 [markup]
 defaultMarkdownHandler = 'goldmark'
@@ -23,13 +33,50 @@ noClasses = false
 guessSyntax = true
 
 [markup.tableOfContents]
-endLevel = 6
+endLevel = 3
 ordered = false
 startLevel = 2
+
+# Clean, keyword-bearing URLs for the new project case-study pages.
+# Posts keep their historic /posts/ URLs so existing links never break.
+[permalinks]
+projects = '/projects/:slug/'
+
+# Related content: powers "Keep reading" boxes (tags + categories + keywords)
+[related]
+threshold = 60
+includeNewer = true
+toLower = true
+
+[[related.indices]]
+name = 'tags'
+weight = 80
+
+[[related.indices]]
+name = 'categories'
+weight = 70
+
+[[related.indices]]
+name = 'keywords'
+weight = 60
 
 [taxonomies]
 tags = 'tags'
 categories = 'categories'
+
+# Sitemap tuning: posts change rarely, home changes often
+[sitemap]
+changefreq = 'weekly'
+filename = 'sitemap.xml'
+priority = 0.5
+
+# RSS: full content helps readers, summary helps SEO reuse
+[outputs]
+home = ['HTML', 'RSS']
+section = ['HTML', 'RSS']
+page = ['HTML']
+taxonomy = ['HTML', 'RSS']
+term = ['HTML', 'RSS']
 
 [[menu.main]]
 identifier = 'home'
@@ -76,10 +123,15 @@ weight = 7
 [params]
 title = 'Tachera W Sasi'
 author = 'Tachera W Sasi'
-description = 'Portfolio and blog of Tachera W Sasi, backend and infra engineer building boring, reliable, self-hosted, observable production infrastructure in Go (ekilie.cloud, BeamDrop).'
-keywords = ['tachera', 'sasi', 'portfolio', 'golang', 'backend', 'infrastructure', 'self-hosted', 'observability', 'ekilie', 'beamdrop', 'software engineer', 'open source']
-customCSS = ['/css/portfolio.css']
-customJS = ['/js/projects.js']
+authorBio = 'Tachera W Sasi is a backend and infrastructure engineer building boring, reliable, self-hosted production infrastructure in Go: ekilie.cloud (VPS hosting & managed deployments) and BeamDrop (self-hosted file sharing with S3-compatible API). Creator of VintLang.'
+authorJobTitle = 'Backend & Infrastructure Engineer'
+description = 'Portfolio, projects and engineering writing by Tachera W Sasi — backend & infra engineer building boring, reliable, self-hosted, observable production infrastructure in Go (ekilie.cloud, BeamDrop, VintLang).'
+keywords = ['tachera sasi', 'tachera w sasi', 'golang backend engineer', 'go infrastructure', 'self-hosted', 'observability', 'ekilie cloud', 'beamdrop', 'vintlang', 'software engineer portfolio', 'open source go']
+siteType = 'Person'
+locale = 'en_US'
+# Fallback social image (absolute URL built at render time). Must exist in static/.
+defaultOgImage = '/images/me.jpg'
+twitterHandle = '@tacherasasi'
 dateFormat = '2 January 2006'
 since = '2021'
 toc = true
@@ -89,11 +141,22 @@ rootFontSize = '100%'
 math = false
 enableDuckDuckGoSearchBox = false
 numberedSubtitles = false
+customCSS = ['/css/portfolio.css']
+customJS = ['/js/projects.js']
+
+[params.seo]
+googleSiteVerification = ''
+bingSiteVerification = ''
+# Set to your domain in production; used for absolute OG/Twitter image URLs
+canonicalHost = 'https://tacherasasi.github.io'
 
 [params.social]
 email = 'tacherasasi@gmail.com'
 github = 'https://github.com/tacheraSasi'
 linkedin = 'https://www.linkedin.com/in/tachera-w-sasi-506307286'
+medium = 'https://medium.com/@tacherasasi'
+musescore = 'https://musescore.com/user/97285780'
+sameAs = ['https://github.com/tacheraSasi', 'https://www.linkedin.com/in/tachera-w-sasi-506307286', 'https://medium.com/@tacherasasi', 'https://vintlang.ekilie.com', 'https://ekilie.cloud']
 
 [params.buymeacoffee]
 code = ''
@@ -110,3 +173,7 @@ reddit = true
 whatsapp = true
 hackernews = true
 telegram = true
+
+# Privacy-friendly internal analytics placeholder (disabled by default)
+[params.analytics]
+enabled = false

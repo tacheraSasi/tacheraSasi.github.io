@@ -1,0 +1,16 @@
+{{ define "main" }}
+<main id="main" class="page">
+  {{ partial "breadcrumbs.html" . }}
+  <h1 class="page-title">{{ .Title }}</h1>
+  {{ with .Content }}<div class="page-intro">{{ . }}</div>{{ end }}
+  <p class="meta">Browse writing by topic. Each tag collects every article on that subject.</p>
+  <ul class="tag-cloud">
+    {{ range .Data.Terms.ByCount }}
+    <li>
+      <a class="link tag" href="{{ .Page.Permalink }}">#{{ .Page.Title }}</a>
+      <span class="meta">{{ len .Pages }} post{{ if ne (len .Pages) 1 }}s{{ end }}</span>
+    </li>
+    {{ end }}
+  </ul>
+</main>
+{{ end }}

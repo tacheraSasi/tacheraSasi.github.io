@@ -1,9 +1,18 @@
 ---
 title: "How TypeScript Enums Compile to JavaScript (And Why It Matters)"
 date: 2025-08-31
-summary: "TypeScript enums compile to JavaScript in surprising ways. Understanding the output helps you use them wisely."
+lastmod: 2025-08-31
 draft: false
+author: "Tachera W Sasi"
+description: "TypeScript enums compile to surprising JavaScript output. See what tsc actually emits and when to prefer const objects or union types."
+summary: "TypeScript enums compile to JavaScript in surprising ways. Understanding the output helps you use them wisely."
+tags: ["typescript", "javascript", "enums", "frontend", "web-development"]
+categories: ["Web Development"]
+keywords: ["typescript enums compile", "typescript enum javascript output"]
+images: ["/images/me.jpg"]
 medium: "https://medium.com/@tacherasasi/how-typescript-enums-compile-to-javascript-and-why-it-matters-8766881c1728?source=rss-9a41d7ec29fb------2"
+---
+---2"
 tags: ["typescript", "javascript", "enums-in-typescript"]
 ---
 

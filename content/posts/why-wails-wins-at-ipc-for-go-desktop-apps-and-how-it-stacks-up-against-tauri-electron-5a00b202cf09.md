@@ -1,9 +1,18 @@
 ---
 title: "Why Wails Wins at IPC for Go Desktop Apps (and How It Stacks Up Against Tauri & Electron)"
 date: 2025-08-27
-summary: "Why Wails wins at IPC for Go desktop apps, and how it stacks up against Tauri and Electron."
+lastmod: 2025-08-27
 draft: false
+author: "Tachera W Sasi"
+description: "Wails vs Tauri vs Electron for Go desktop apps: why Wails wins at IPC, with an honest comparison of architecture, bundle size and developer experience."
+summary: "Why Wails wins at IPC for Go desktop apps, and how it stacks up against Tauri and Electron."
+tags: ["go", "golang", "wails", "tauri", "electron", "desktop", "ipc"]
+categories: ["Backend"]
+keywords: ["wails vs tauri vs electron", "go desktop apps", "wails ipc"]
+images: ["/images/mockwails.png"]
 medium: "https://medium.com/@tacherasasi/why-wails-wins-at-ipc-for-go-desktop-apps-and-how-it-stacks-up-against-tauri-electron-5a00b202cf09?source=rss-9a41d7ec29fb------2"
+---
+---2"
 tags: ["golang", "wails"]
 ---
 

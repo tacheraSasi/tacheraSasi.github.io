@@ -1,0 +1,120 @@
+{{/* SEO head: meta, canonical, Open Graph, Twitter, favicons. */}}
+{{- $site := .Site -}}
+{{- $title := "" -}}
+{{- if .IsHome -}}
+  {{- $title = $site.Title -}}
+{{- else -}}
+  {{- $pageTitle := .Title | plainify | htmlUnescape -}}
+  {{- $title = printf "%s | %s" $pageTitle $site.Params.title -}}
+{{- end -}}
+
+{{- /* Description: front-matter description > summary > section description > site description, plain, ~155 chars */ -}}
+{{- $desc := "" -}}
+{{- with .Params.description -}}
+  {{- $desc = . | plainify | htmlUnescape -}}
+{{- else -}}
+  {{- if and .IsPage .Summary -}}
+    {{- $desc = .Summary | plainify | htmlUnescape -}}
+  {{- else if .Description -}}
+    {{- $desc = .Description | plainify | htmlUnescape -}}
+  {{- else if .IsSection -}}
+    {{- with .Content -}}{{ $desc = . | plainify | htmlUnescape }}{{- end -}}
+  {{- end -}}
+  {{- if eq (len $desc) 0 -}}
+    {{- $desc = $site.Params.description -}}
+  {{- end -}}
+{{- end -}}
+{{- $desc = $desc | truncate 160 -}}
+
+{{- /* Keywords: page keywords + tags + categories + site keywords */ -}}
+{{- $kw := slice -}}
+{{- with .Params.keywords -}}{{- range . -}}{{- $kw = $kw | append . -}}{{- end -}}{{- end -}}
+{{- with .Params.tags -}}{{- range . -}}{{- $kw = $kw | append . -}}{{- end -}}{{- end -}}
+{{- with .Params.categories -}}{{- range . -}}{{- $kw = $kw | append . -}}{{- end -}}{{- end -}}
+{{- range $site.Params.keywords -}}{{- $kw = $kw | append . -}}{{- end -}}
+{{- $kw = uniq $kw -}}
+
+{{- /* Canonical + robots */ -}}
+{{- $canonical := .Permalink -}}
+{{- with .Params.canonicalUrl -}}{{- $canonical = . -}}{{- end -}}
+{{- $robots := "index, follow, max-image-preview:large, max-snippet:-1" -}}
+{{- if or .Params.noindex (and (not .IsHome) (eq .Kind "taxonomy")) -}}
+  {{- /* keep taxonomies indexable; only honour explicit noindex */ -}}
+  {{- if .Params.noindex -}}{{- $robots = "noindex, follow" -}}{{- end -}}
+{{- end -}}
+{{- if and (eq .Kind "section") (gt .Paginator.PageNumber 1) -}}
+  {{- $robots = "noindex, follow" -}}
+{{- end -}}
+
+{{- /* OG image: images[0] > coverImage > section cover > site default, absolutised */ -}}
+{{- $ogImage := $site.Params.defaultOgImage -}}
+{{- with .Params.images -}}{{- with index . 0 -}}{{- $ogImage = . -}}{{- end -}}{{- end -}}
+{{- if and (eq $ogImage $site.Params.defaultOgImage) .Params.coverImage -}}
+  {{- $ogImage = .Params.coverImage -}}
+{{- end -}}
+{{- $ogImageAbs := $ogImage | absURL -}}
+{{- $isArticle := and .IsPage (eq .Section "posts") -}}
+<title>{{ $title }}</title>
+<meta name="description" content="{{ $desc }}">
+{{- if gt (len $kw) 0 }}
+<meta name="keywords" content="{{ delimit $kw ", " }}">
+{{- end }}
+<meta name="author" content="{{ with .Params.author }}{{ . }}{{ else }}{{ $site.Params.author }}{{ end }}">
+<meta name="robots" content="{{ $robots }}">
+{{- with $site.Params.seo.googleSiteVerification }}
+<meta name="google-site-verification" content="{{ . }}">
+{{- end }}
+{{- with $site.Params.seo.bingSiteVerification }}
+<meta name="msvalidate.01" content="{{ . }}">
+{{- end }}
+<link rel="canonical" href="{{ $canonical }}">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="{{ $site.Params.locale | default "en_US" }}">
+<meta property="og:site_name" content="{{ $site.Params.title }}">
+<meta property="og:title" content="{{ if .IsHome }}{{ $site.Params.title }}{{ else }}{{ .Title | plainify | htmlUnescape }}{{ end }}">
+<meta property="og:description" content="{{ $desc }}">
+<meta property="og:url" content="{{ $canonical }}">
+<meta property="og:image" content="{{ $ogImageAbs }}">
+<meta property="og:image:alt" content="{{ if .IsHome }}{{ $site.Params.author }} — {{ $site.Params.authorJobTitle }}{{ else }}{{ .Title | plainify | htmlUnescape }}{{ end }}">
+{{- if $isArticle }}
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="{{ .PublishDate.Format "2006-01-02T15:04:05Z07:00" }}">
+<meta property="article:modified_time" content="{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}">
+{{- with .Params.categories }}{{- range first 1 . }}<meta property="article:section" content="{{ . }}">{{- end -}}{{- end }}
+{{- with .Params.tags }}{{- range . }}<meta property="article:tag" content="{{ . }}">{{- end -}}{{- end }}
+{{- else }}
+<meta property="og:type" content="website">
+{{- end }}
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+{{- with $site.Params.twitterHandle }}<meta name="twitter:creator" content="{{ . }}">
+<meta name="twitter:site" content="{{ . }}">{{- end }}
+<meta name="twitter:title" content="{{ if .IsHome }}{{ $site.Title }}{{ else }}{{ .Title | plainify | htmlUnescape }}{{ end }}">
+<meta name="twitter:description" content="{{ $desc }}">
+<meta name="twitter:image" content="{{ $ogImageAbs }}">
+<meta name="twitter:image:alt" content="{{ if .IsHome }}{{ $site.Params.author }} — {{ $site.Params.authorJobTitle }}{{ else }}{{ .Title | plainify | htmlUnescape }}{{ end }}">
+
+<!-- Theme / icons -->
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1a1a1a" media="(prefers-color-scheme: dark)">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="{{ "favicon.svg" | absURL }}" type="image/svg+xml">
+<link rel="icon" href="{{ "images/me.jpg" | absURL }}" type="image/jpeg">
+<link rel="apple-touch-icon" href="{{ "images/me.jpg" | absURL }}">
+<link rel="manifest" href="{{ "manifest.webmanifest" | absURL }}">
+
+<!-- RSS -->
+{{ range .AlternativeOutputFormats -}}
+{{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+{{ end -}}
+
+<!-- Prev/Next for crawlers on paginated + single pages -->
+{{- if .IsPage -}}
+  {{- with .PrevInSection }}<link rel="prev" href="{{ .Permalink }}" title="{{ .Title | plainify }}">{{- end }}
+  {{- with .NextInSection }}<link rel="next" href="{{ .Permalink }}" title="{{ .Title | plainify }}">{{- end }}
+{{- end -}}
+
+<!-- Structured data -->
+{{ partial "seo-jsonld.html" . }}

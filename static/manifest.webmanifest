@@ -1,0 +1,18 @@
+{
+  "name": "Tachera W Sasi — Backend & Infra Engineer",
+  "short_name": "Tachera Sasi",
+  "description": "Portfolio, projects and engineering writing by Tachera W Sasi: Go backends, self-hosted infrastructure, observability.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1a1a1a",
+  "icons": [
+    {
+      "src": "/images/me.jpg",
+      "sizes": "any",
+      "type": "image/jpeg",
+      "purpose": "any"
+    }
+  ]
+}

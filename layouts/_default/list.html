@@ -1,13 +1,26 @@
 {{ define "main" }}
 <main id="main" class="writing-list">
+  {{ partial "breadcrumbs.html" . }}
   <h1 class="page-title">{{ .Title }}</h1>
   {{ with .Content }}<div class="page-intro">{{ . }}</div>{{ end }}
+  <p class="meta">{{ len .Pages }} {{ if eq (len .Pages) 1 }}article{{ else }}articles{{ end }} on backend engineering, Go, systems and building in public.</p>
   <ul class="essay-list">
-    {{ range .Pages }}
+    {{ range .Pages.ByPublishDate.Reverse }}
     <li>
-      <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-      <p class="meta">{{ .PublishDate.Format .Site.Params.dateFormat }}</p>
-      {{ with .Summary | replaceRE `<img[^>]*>` "" | replaceRE `<p>\s*</p>` "" }}{{ . | safeHTML }}{{ end }}
+      <article>
+        <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+        <p class="meta">
+          <time datetime="{{ .PublishDate.Format "2006-01-02" }}">{{ .PublishDate.Format .Site.Params.dateFormat }}</time>
+          &middot; {{ .ReadingTime }} min read
+          {{- with .Params.categories }} &middot; {{ range $i, $c := . }}{{ if $i }}, {{ end }}<a href="{{ (printf "/categories/%s/" ($c | urlize)) | absURL }}">{{ $c }}</a>{{ end }}{{- end }}
+        </p>
+        {{ with .Params.description | default (.Summary | plainify | truncate 160) }}<p>{{ . }}</p>{{ end }}
+        {{ with .Params.tags }}
+        <p class="tag-row">
+          {{ range first 5 . }}<a class="link tag" href='{{ "tags" | absURL }}/{{ . | urlize }}' rel="tag">#{{ . }}</a> {{ end }}
+        </p>
+        {{ end }}
+      </article>
     </li>
     {{ end }}
   </ul>

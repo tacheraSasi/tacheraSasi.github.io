@@ -1,9 +1,18 @@
 ---
 title: "What Basketball Taught Me About Software Engineering"
 date: 2026-10-07
-summary: "What five years of basketball taught me about building software: reading the court, taking the shot, and recovering from mistakes faster."
+lastmod: 2026-10-07
 draft: false
+author: "Tachera W Sasi"
+description: "Five years of basketball taught me to read the court, take the shot and recover from mistakes faster. The same skills that make software engineers great."
+summary: "What five years of basketball taught me about building software: reading the court, taking the shot, and recovering from mistakes faster."
+tags: ["software-engineering", "career", "growth", "lessons", "basketball"]
+categories: ["Career"]
+keywords: ["basketball software engineering", "sports lessons programming"]
+images: ["/images/me.jpg"]
 medium: "https://medium.com/@tacherasasi/what-basketball-taught-me-about-software-engineering-efe47f5d7391?source=rss-9a41d7ec29fb------2"
+---
+---2"
 tags: ["tachera", "software-engineering", "programming"]
 ---
 

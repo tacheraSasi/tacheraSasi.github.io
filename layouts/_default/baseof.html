@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  {{ partial "seo-head.html" . }}
+
+  <!-- math -->
+  {{ if or .Params.math .Site.Params.math }}
+  {{ partial "math.html" . }}
+  {{ end }}
+
+  <!-- buymeacoffee -->
+  {{ .Site.Params.buymeacoffee.code | safeHTML }}
+
+  <!-- style -->
+  {{ $options := dict "transpiler" "dartsass" "targetPath" "css/common.css" }}
+  {{ with resources.Get "sass/layouts/common.scss" | toCSS $options | postCSS | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+  {{ end }}
+
+  {{ $options := dict "transpiler" "dartsass" "targetPath" "css/content.css" }}
+  {{ with resources.Get "sass/layouts/content.scss" | toCSS $options | postCSS | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+  {{ end }}
+
+  {{ block "head" . }}{{ end }}
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div id="wrapper">
+    {{ partial "header.html" . }}
+    {{ block "main" . }}{{ end }}
+    {{ partial "footer.html" . }}
+  </div>
+
+  <!-- javascript -->
+  <script src='{{ "js/script.js" | absURL }}' defer></script>
+
+  <!-- custom css -->
+  {{ range .Site.Params.customCSS }}
+  <link media="screen" rel="stylesheet" href="{{ . | absURL }}" />
+  {{ end }}
+
+  <!-- custom js -->
+  {{ range .Site.Params.customJS }}
+  <script src="{{ . | absURL }}" defer></script>
+  {{ end }}
+
+  <!-- google analytics -->
+  {{ template "_internal/google_analytics.html" . }}
+
+</body>
+
+</html>

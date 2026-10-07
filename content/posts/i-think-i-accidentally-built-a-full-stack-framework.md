@@ -1,12 +1,17 @@
 ---
-title: " I Think I Accidentally Built a Full-Stack Framework?"
+title: "I Think I Accidentally Built a Full-Stack Framework"
 date: 2026-02-20
+lastmod: 2026-02-20
 draft: false
-summary: "It started, as these things always do, with a simple problem: I needed to share files between my devices. \"I'll just write a quick Go server,\" I said. \"It'll take an afternoon,\" I said. \"It'll be like 200 lines of code,\" I said.\n"
-tags: ["golang", "beamdrop", "reactts"]
+author: "Tachera W Sasi"
+description: "I needed to share files between devices and accidentally built a full-stack framework: Go server, embedded React frontend, SQLite, S3 API, one binary."
+summary: "It started with a simple problem: sharing files between my devices. One Go server, one React frontend and one SQLite database later, I had BeamDrop."
+tags: ["go", "golang", "beamdrop", "react", "self-hosted", "sqlite", "full-stack"]
+categories: ["Backend"]
+keywords: ["beamdrop", "go embed react", "self-hosted file sharing go", "single binary full-stack"]
+images: ["https://tachera.vercel.app/beamdrop.png"]
 coverImage: "https://tachera.vercel.app/beamdrop.png"
 ---
-
 *Look, I just wanted to share some files.*
 
 ## The Innocent Beginning

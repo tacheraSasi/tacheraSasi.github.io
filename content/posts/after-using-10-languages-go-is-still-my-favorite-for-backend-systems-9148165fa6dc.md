@@ -1,9 +1,18 @@
 ---
 title: "After Using 10+ Languages, Go Is Still My Favorite for Backend Systems"
 date: 2026-03-09
-summary: "After experimenting with 10+ languages, I keep coming back to Go for backend systems. Here's why."
+lastmod: 2026-03-09
 draft: false
+author: "Tachera W Sasi"
+description: "After building in 10+ programming languages, I keep choosing Go for backend systems. Simplicity, fast builds, concurrency and boring reliability win."
+summary: "After experimenting with 10+ languages, I keep coming back to Go for backend systems. Here's why."
+tags: ["go", "golang", "backend", "programming-languages", "systems", "software-engineering"]
+categories: ["Backend"]
+keywords: ["go backend", "golang backend systems", "programming languages comparison"]
+images: ["/images/go-1.png"]
 medium: "https://medium.com/@tacherasasi/after-using-10-languages-go-is-still-my-favorite-for-backend-systems-9148165fa6dc?source=rss-9a41d7ec29fb------2"
+---
+---2"
 tags: ["programming-languages", "golang", "backend-development", "scalable-applications"]
 ---
 

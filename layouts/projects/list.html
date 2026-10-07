@@ -1,5 +1,6 @@
 {{ define "main" }}
 <main id="main" class="page">
+  {{ partial "breadcrumbs.html" . }}
   <h1 class="page-title">{{ .Title }}</h1>
   <article class="content page-intro">{{ .Content }}</article>
 
@@ -31,7 +32,21 @@
     {{ end }}
   {{ end }}
 
-  <p class="project-count" id="project-count">{{ len $projects }} projects</p>
+  {{/* Map of internal case-study pages: data title -> page rel permalink slug */}}
+  {{ $caseStudies := dict
+    "BeamDrop" "/projects/beamdrop/"
+    "VintLang" "/projects/vintlang/"
+    "Ekilie Cloud" "/projects/ekilie-cloud/"
+    "ekilied" "/projects/ekilied/"
+    "GooferORM" "/projects/gooferorm/"
+    "TripWire" "/projects/tripwire/"
+    "ekiliRelay" "/projects/ekilirelay/"
+    "Magreth" "/projects/magreth/"
+    "Transliflow" "/projects/transliflow/"
+    "TUWK" "/projects/tuwk/"
+  }}
+
+  <p class="project-count" id="project-count">{{ len $projects }} projects — production systems, developer tools and open source by {{ .Site.Params.author }}.</p>
   <div class="project-filters" id="project-filters" role="group" aria-label="Filter projects by language or framework">
     <button type="button" class="filter-btn active" data-filter="all">All</button>
     {{ range sort $techSet }}
@@ -41,15 +56,17 @@
 
   <div class="project-grid" id="project-grid">
     {{ range $projects }}
+    {{ $study := index $caseStudies .title }}
     <div class="project-card" data-tech='{{ range .tech }}{{ $key := lower (trim . " ") }}{{ index $canon $key | default $key }},{{ end }}'>
-      <img class="project-thumb" src="{{ .image }}" alt="{{ .title }}" loading="lazy">
+      <img class="project-thumb" src="{{ .image }}" alt="{{ .title }} — {{ .description | truncate 90 }}" loading="lazy" width="640" height="320">
       <div class="project-body">
-        <h3>{{ .title }}</h3>
+        <h2>{{ .title }}</h2>
         <p>{{ .description }}</p>
         <div class="project-tech">
           {{ range .tech }}<span class="tech-badge">{{ index $canon (lower (trim . " ")) | default (lower (trim . " ")) }}</span>{{ end }}
         </div>
         <div class="project-links">
+          {{ with $study }}<a class="link" href="{{ . }}">Case study</a> &middot;{{ end }}
           <a class="link" href="{{ .url }}" target="_blank" rel="noopener">Live / Site</a>
           {{ with .github }}&middot; <a class="link" href="{{ . }}" target="_blank" rel="noopener">GitHub</a>{{ end }}
         </div>
@@ -57,5 +74,15 @@
     </div>
     {{ end }}
   </div>
+
+  <h2 class="section-heading">About these projects</h2>
+  <p>
+    Every project above is built and maintained by {{ .Site.Params.author }}, a backend and infrastructure
+    engineer working in Go, TypeScript and Zig. Flagship work includes
+    <a href="/projects/beamdrop/">BeamDrop</a> (self-hosted file sharing with an S3-compatible API),
+    <a href="/projects/ekilie-cloud/">ekilie.cloud</a> (VPS hosting and managed deployments),
+    and <a href="/projects/vintlang/">VintLang</a> (a programming language built in Go).
+    Read the engineering notes behind them in <a href="/posts/">writing</a>, or <a href="/contact/">get in touch</a> to collaborate.
+  </p>
 </main>
 {{ end }}
