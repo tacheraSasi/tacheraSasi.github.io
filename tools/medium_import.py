@@ -63,6 +63,8 @@ def guess_language(code: str) -> str:
         return "rust"
     if re.search(r"^\s*#include\s*<", code, re.M):
         return "c"
+    if re.search(r"\bfrom\s+['\"]|\bexport\s+default\b", code):
+        return "ts"
     if re.search(r"\bdef\s+\w+\(|^\s*import\s+\w+", code, re.M):
         return "python"
     if re.search(
