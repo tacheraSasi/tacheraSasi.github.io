@@ -1,6 +1,6 @@
 ---
 title: "Tachera W Sasi, Backend & Infra Engineer"
-description: "Tachera W Sasi is a backend and infrastructure engineer in Go and Lead Software Engineer at AkiliSoft. Projects: BeamDrop, VintLang, ekilie.cloud. Open to backend, platform and DevOps roles."
+description: "Backend and infra engineer in Go. Lead SWE at AkiliSoft. Point guard, tenor singer, guitarist. BeamDrop, VintLang, ekilie.cloud. Open to backend and DevOps roles."
 ---
 
 I'm Tachera W Sasi, a backend and infrastructure engineer, currently Lead Software Engineer at [AkiliSoft](https://akilisofterp.com/), where I lead the team building cross-platform products in Go and React Native.
@@ -9,7 +9,9 @@ On the side, I design and build my own production infrastructure in Go: [BeamDro
 
 **Open to backend, infrastructure, platform/SRE, DevOps and full-stack (Go/TypeScript) roles.** [Contact me](/contact/) or grab my [CV](/resume.pdf).
 
-When I'm not shipping, I'm writing about it in [writings](/posts/), composing music in [music](/music/), or refining the systems I live by in [philosophy](/philosophy/).
+When I'm not shipping, I'm playing point guard (basketball taught me a lot about engineering, see [the essay](/posts/what-basketball-taught-me-about-software-engineering-efe47f5d7391/)), singing tenor and playing guitar (see my [compositions](/music/)), or refining the systems I live by in [philosophy](/philosophy/).
+
+A few strong opinions: I love Kobe, but MJ is my GOAT, and Game of Thrones is better than Breaking Bad.
 
 ## Highlights
 
