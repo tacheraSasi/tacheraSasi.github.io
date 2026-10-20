@@ -7,7 +7,7 @@ I'm Tachera W Sasi, a backend and infrastructure engineer, currently Lead Softwa
 
 On the side, I design and build my own production infrastructure in Go: [BeamDrop](https://github.com/ekilie/beamdrop), self-hosted file sharing with an S3-compatible API, and [ekilie.cloud](https://ekilie.cloud), an independently operated VPS hosting and managed-deployment platform. I also created [VintLang](https://vintlang.ekilie.com), a programming language built in Go.
 
-**Open to backend, infrastructure, platform/SRE, DevOps and full-stack (Go/TypeScript) roles.** Get in touch on the [contact page](/contact/).
+**Open to backend, infrastructure, platform/SRE, DevOps and full-stack (Go/TypeScript) roles.** [Contact me](/contact/) or grab my [CV](/resume.pdf).
 
 When I'm not shipping, I'm writing about it in [writings](/posts/), composing music in [music](/music/), or refining the systems I live by in [philosophy](/philosophy/).
 
