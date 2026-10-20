@@ -28,4 +28,4 @@ Ekilie Cloud is a hosting and deployment platform for people who want the contro
 
 A Go control plane (Gin, GORM, PostgreSQL) issues desired-state commands; a small Go agent on each VPS converges the machine: systemd units, Nginx/Caddy configs, certificates, log shipping. Everything is observable by default, because infrastructure that pages you at 3am is a bug.
 
-Ekilie Cloud is an independent side project I design and operate alongside full-time engineering work; my current role is Lead Software Engineer at AkiliSoft (see [about](/about/)). It is live at [ekilie.cloud](https://ekilie.cloud). For the open source building blocks, see [BeamDrop](/projects/beamdrop/) and [ekilied](/projects/ekilied/).
+Ekilie Cloud is an independent side project I design and operate alongside full-time engineering work; my current role is Lead Software Engineer at [AkiliSoft](https://akilisofterp.com/) (see [about](/about/)). It is live at [ekilie.cloud](https://ekilie.cloud). For the open source building blocks, see [BeamDrop](/projects/beamdrop/) and [ekilied](/projects/ekilied/).

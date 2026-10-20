@@ -26,6 +26,7 @@
 <script type="application/ld+json">{{ $website | jsonify | safeJS }}</script>
 
 {{- if .IsHome }}
+{{- $bioPlain := $site.Params.authorBio | plainify -}}
 {{- $person := dict
   "@context" "https://schema.org"
   "@type" "Person"
@@ -34,7 +35,7 @@
   "url" $siteURL
   "image" $ogImage
   "jobTitle" $site.Params.authorJobTitle
-  "description" $site.Params.authorBio
+  "description" $bioPlain
   "sameAs" $sameAs
 }}
 <script type="application/ld+json">{{ $person | jsonify | safeJS }}</script>

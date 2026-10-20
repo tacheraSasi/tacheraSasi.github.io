@@ -97,7 +97,7 @@
       <img src="/images/me.jpg" alt="{{ $.Site.Params.author }}, {{ $.Site.Params.authorJobTitle }}" width="72" height="90" loading="lazy">
       <div>
         <p class="author-name">Written by {{ $.Site.Params.author }}</p>
-        <p class="meta">{{ $.Site.Params.authorBio }}</p>
+        <p class="meta">{{ $.Site.Params.authorBio | safeHTML }}</p>
         <p class="meta"><a href="/about/">More about me</a> &middot; <a href="/resume.pdf" target="_blank">CV</a> &middot; <a href="/projects/">Projects</a> &middot; <a href="{{ $.Site.Params.social.github }}" target="_blank" rel="noopener">GitHub</a></p>
       </div>
     </aside>

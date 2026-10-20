@@ -20,10 +20,11 @@
   <h2 class="section-heading">Timeline</h2>
   <div class="timeline">
     {{ range .Site.Data.timeline }}
+    {{ $item := . }}
     <div class="timeline-item">
       <div class="timeline-year">{{ .year }}</div>
       <div class="timeline-body">
-        <h3>{{ .title }}{{ with .organization }}, <span class="timeline-org">{{ . }}</span>{{ end }}</h3>
+        <h3>{{ .title }}{{ with .organization }}, <span class="timeline-org">{{ with $item.link }}<a href="{{ . }}" target="_blank" rel="noopener">{{ $item.organization }}</a>{{ else }}{{ $item.organization }}{{ end }}</span>{{ end }}</h3>
         <p>{{ .description }}</p>
       </div>
     </div>
