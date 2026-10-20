@@ -7,13 +7,13 @@ author: "Tachera W Sasi"
 description: "Next.js was my favorite framework for two years. Then one awkward question ended it: what was I actually using it for? The answer: mostly just routing."
 summary: "Next.js was my favorite framework for two years. Then one awkward question ended it: what was I actually using it for? The answer: mostly just routing."
 tags: ["react", "nextjs", "tanstack-router", "vite"]
-categories: []
-keywords: []
-images: ["/images/me.jpg"]
+categories: ["Web Development"]
+keywords: ["next.js alternative", "react without next.js", "tanstack router vs next.js", "vite react spa routing"]
+images: ["https://cdn-images-1.medium.com/max/1200/1*weStifDcGA1TP8qTCCpA6g.png"]
 medium: "https://medium.com/@tacherasasi/i-moved-all-my-react-apps-away-from-next-js-b911eeb4809a?source=rss-9a41d7ec29fb------2"
 ---
 
-![](https://cdn-images-1.medium.com/max/1024/1*weStifDcGA1TP8qTCCpA6g.png)
+![A React app architecture split between a plain Vite frontend and an independent backend](https://cdn-images-1.medium.com/max/1024/1*weStifDcGA1TP8qTCCpA6g.png)
 
 For a while, Next.js was *the* framework for me.
 
