@@ -1,7 +1,11 @@
 ---
 title: "Contact Tachera W Sasi"
-description: "Contact Tachera W Sasi for collaboration on Go backends, self-hosted infrastructure, open source or VintLang. Reach out on GitHub or LinkedIn."
-keywords: ["contact", "collaborate", "go backend consultant", "hire golang engineer"]
+description: "Contact Tachera W Sasi about backend, infrastructure, platform/SRE or DevOps roles, or to collaborate on Go and self-hosted infrastructure. Fastest via LinkedIn or email."
+keywords: ["hire go engineer", "backend engineer contact", "infrastructure engineer", "platform engineer contact"]
 ---
 
-Whether you want to collaborate on a project, talk about Go, self-hosted infrastructure or VintLang, or just say hi, reach out on [GitHub](https://github.com/tacheraSasi) or [LinkedIn](https://www.linkedin.com/in/tachera-w-sasi-506307286). You can also read my [writing](/posts/), browse [projects](/projects/) or learn more [about me](/about/).
+**I'm currently open to backend, infrastructure, platform/SRE, DevOps and full-stack (Go/TypeScript) roles**, remote or on-site, and happy to discuss full-time positions. My CV: [resume.pdf](/resume.pdf).
+
+The fastest ways to reach me: [LinkedIn](https://www.linkedin.com/in/tachera-w-sasi-506307286) or email at [tacherasasi@gmail.com](mailto:tacherasasi@gmail.com). I usually reply within a day or two.
+
+Useful before you reach out: my [projects](/projects/) (BeamDrop, VintLang, ekilie.cloud and more), my [writing](/posts/) on Go and backend systems, and my [background](/about/).

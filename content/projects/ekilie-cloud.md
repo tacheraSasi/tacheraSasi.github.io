@@ -4,7 +4,7 @@ slug: "ekilie-cloud"
 date: 2026-01-15
 draft: false
 author: "Tachera W Sasi"
-description: "Ekilie Cloud is VPS hosting and managed deployments for self-hosted infrastructure: sites, SSL, deployments and process lifecycle on your own server."
+description: "Ekilie Cloud is a VPS hosting and managed-deployment platform for self-hosted infrastructure, built in Go as an independent side project: sites, SSL, deployments and process lifecycle."
 keywords: ["ekilie cloud", "vps hosting", "managed deployments", "self-hosted infrastructure", "control plane"]
 images: ["/images/go-2.png"]
 subtitle: "A control plane for self-hosted infrastructure: bring a VPS, get sites, SSL and deployments."
@@ -28,4 +28,4 @@ Ekilie Cloud is a hosting and deployment platform for people who want the contro
 
 A Go control plane (Gin, GORM, PostgreSQL) issues desired-state commands; a small Go agent on each VPS converges the machine: systemd units, Nginx/Caddy configs, certificates, log shipping. Everything is observable by default, because infrastructure that pages you at 3am is a bug.
 
-Ekilie Cloud is currently closed-source and live at [ekilie.cloud](https://ekilie.cloud). For the open source building blocks, see [BeamDrop](/projects/beamdrop/) and [ekilied](/projects/ekilied/).
+Ekilie Cloud is an independent side project I design and operate alongside full-time engineering work; my current role is Lead Software Engineer at AkiliSoft (see [about](/about/)). It is live at [ekilie.cloud](https://ekilie.cloud). For the open source building blocks, see [BeamDrop](/projects/beamdrop/) and [ekilied](/projects/ekilied/).

@@ -123,9 +123,9 @@ weight = 7
 [params]
 title = 'Tachera W Sasi'
 author = 'Tachera W Sasi'
-authorBio = 'Tachera W Sasi is a backend and infrastructure engineer building boring, reliable, self-hosted production infrastructure in Go: ekilie.cloud (VPS hosting & managed deployments) and BeamDrop (self-hosted file sharing with S3-compatible API). Creator of VintLang.'
+authorBio = 'Backend and infrastructure engineer (Go). Lead Software Engineer at AkiliSoft Ltd; on the side: ekilie.cloud (VPS hosting) and BeamDrop (self-hosted file sharing). Creator of VintLang. Open to backend, infrastructure and platform roles.'
 authorJobTitle = 'Backend & Infrastructure Engineer'
-description = 'Portfolio, projects and engineering writing by Tachera W Sasi, backend & infra engineer building boring, reliable, self-hosted, observable production infrastructure in Go (ekilie.cloud, BeamDrop, VintLang).'
+description = 'Portfolio, projects and engineering writing by Tachera W Sasi, backend & infrastructure engineer (Lead SWE at AkiliSoft). Reliable, self-hosted production systems in Go: BeamDrop, ekilie.cloud, VintLang. Open to backend and infrastructure roles.'
 keywords = ['tachera sasi', 'tachera w sasi', 'golang backend engineer', 'go infrastructure', 'self-hosted', 'observability', 'ekilie cloud', 'beamdrop', 'vintlang', 'software engineer portfolio', 'open source go']
 siteType = 'Person'
 locale = 'en_US'

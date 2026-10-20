@@ -1,17 +1,20 @@
 ---
-title: "About Tachera W Sasi, Backend & Infrastructure Engineer"
-description: "Tachera W Sasi is a backend and infrastructure engineer (Go) building ekilie.cloud and BeamDrop. Lead engineer at AkiliSoft, creator of VintLang, open source contributor."
-keywords: ["tachera sasi", "backend engineer", "golang engineer", "infrastructure engineer", "vintlang creator"]
+title: "Tachera W Sasi, Backend & Infra Engineer"
+description: "Tachera W Sasi is a backend and infrastructure engineer in Go and Lead Software Engineer at AkiliSoft. Projects: BeamDrop, VintLang, ekilie.cloud. Open to backend, platform and DevOps roles."
 ---
 
-I'm Tachera W Sasi, a backend and infrastructure engineer. I build boring, reliable, self-hosted production infrastructure in Go: [ekilie.cloud](https://ekilie.cloud) (VPS hosting and managed deployments) and [BeamDrop](https://github.com/ekilie/beamdrop) (self-hosted file sharing with an S3-compatible API). I'm the creator of [VintLang](https://vintlang.ekilie.com), a programming language built in Go, and lead software engineer at AkiliSoft Ltd.
+I'm Tachera W Sasi, a backend and infrastructure engineer, currently Lead Software Engineer at AkiliSoft Ltd, where I lead the team building cross-platform products in Go and React Native.
 
-When I'm not shipping infrastructure, I'm writing about it in [writings](/posts/), composing music in [music](/music/), or refining the systems I live by in [philosophy](/philosophy/).
+On the side, I design and build my own production infrastructure in Go: [BeamDrop](https://github.com/ekilie/beamdrop), self-hosted file sharing with an S3-compatible API, and [ekilie.cloud](https://ekilie.cloud), an independently operated VPS hosting and managed-deployment platform. I also created [VintLang](https://vintlang.ekilie.com), a programming language built in Go.
+
+**Open to backend, infrastructure, platform/SRE, DevOps and full-stack (Go/TypeScript) roles.** Get in touch on the [contact page](/contact/).
+
+When I'm not shipping, I'm writing about it in [writings](/posts/), composing music in [music](/music/), or refining the systems I live by in [philosophy](/philosophy/).
 
 ## Highlights
 
-- **Lead Software Engineer** at AkiliSoft Ltd (2026) and ekilie (2025)
-- **Founder of the ekilie ecosystem**: ekiliRelay, ekiliSense, Magreth, and more
+- **Lead Software Engineer** at AkiliSoft Ltd (2026), previously Backend Engineer at IPFSoftwares
+- Built and operate the ekilie developer-tools ecosystem: ekiliRelay, ekiliSense, Magreth, and more
 - **Creator of VintLang**, a programming language built in Go
 - **Open source contributor**: trendUI, JurisJs, ZX, Ghostty, and many Go libraries
 - Impact-driven builder: TUWK, Transliflow, and Ellie

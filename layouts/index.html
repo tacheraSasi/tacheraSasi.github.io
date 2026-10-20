@@ -5,13 +5,14 @@
     <img src="/images/me.jpg" alt="Portrait of {{ .Site.Params.author }}, {{ .Site.Params.authorJobTitle }}" width="128" height="160" fetchpriority="high">
     <div>
       <h1>Hi, I&rsquo;m {{ .Site.Params.author }}</h1>
-      <p class="role">Backend &amp; Infra Engineer</p>
+      <p class="role">Backend &amp; Infra Engineer at AkiliSoft</p>
       <p class="tagline">Go &middot; systems &middot; self-hosted &middot; observability</p>
       <ul class="social">
         <li><a href="{{ .Site.Params.social.github }}" target="_blank" rel="noopener me">GitHub</a></li>
         <li><a href="{{ .Site.Params.social.linkedin }}" target="_blank" rel="noopener me">LinkedIn</a></li>
         <li><a href="{{ .Site.Params.social.medium }}" target="_blank" rel="noopener me">Medium</a></li>
       </ul>
+      <p class="availability">Open to backend, infra &amp; platform roles &middot; <a href="/contact/">Contact</a> &middot; <a href="/resume.pdf" target="_blank">CV</a></p>
     </div>
   </div>
 
@@ -20,18 +21,20 @@
   </p>
 
   <p>
-    Currently building <a href="https://ekilie.cloud" target="_blank" rel="noopener">ekilie.cloud</a>,
-    VPS hosting and managed deployments for self-hosted infrastructure, and
+    Lead Software Engineer at AkiliSoft, building cross-platform products in Go.
+    On the side, I design and build my own production infrastructure:
     <a href="https://github.com/ekilie/beamdrop" target="_blank" rel="noopener">BeamDrop</a>,
-    self-hosted file sharing with an S3-compatible API, Prometheus metrics, and Docker support.
+    self-hosted file sharing with an S3-compatible API, Prometheus metrics, and Docker support, and
+    <a href="https://ekilie.cloud" target="_blank" rel="noopener">ekilie.cloud</a>,
+    an independent VPS hosting and managed-deployment platform I design and operate.
   </p>
 
   <p>
     I care about production infrastructure that is observable, self-hostable,
     and doesn&rsquo;t wake you at 3am.
     <br>Creator of
-    <a href="https://vintlang.ekilie.com" target="_blank" rel="noopener">VintLang</a>.
-    <br>One of the languages ekilie cloud runs on
+    <a href="https://vintlang.ekilie.com" target="_blank" rel="noopener">VintLang</a>,
+    a programming language built in Go; it powers parts of the ekilie cloud stack.
   </p>
 
   <p class="page-links">
@@ -66,14 +69,14 @@
     </li>
     <li>
       <article>
-        <h3><a href="/projects/ekilie-cloud/">ekilie.cloud, VPS hosting &amp; managed deployments</a></h3>
-        <p>Control plane for self-hosted infrastructure: sites, deployments, SSL and process lifecycle on your own VPS.</p>
+        <h3><a href="/projects/vintlang/">VintLang, a programming language built in Go</a></h3>
+        <p>A practical language project exploring interpreters, tooling and developer experience.</p>
       </article>
     </li>
     <li>
       <article>
-        <h3><a href="/projects/vintlang/">VintLang, a programming language built in Go</a></h3>
-        <p>A practical language project exploring interpreters, tooling and developer experience.</p>
+        <h3><a href="/projects/ekilie-cloud/">ekilie.cloud, VPS hosting & managed deployments</a></h3>
+        <p>Side-project control plane for self-hosted infrastructure: sites, deployments, SSL and process lifecycle on your own VPS.</p>
       </article>
     </li>
   </ul>

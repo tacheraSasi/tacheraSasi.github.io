@@ -112,6 +112,21 @@ hr.head-rule {
   padding: 0;
 }
 
+.availability {
+  background-color: var(--bg_s);
+  border: 1px solid var(--bg2);
+  border-radius: 0.3rem;
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-top: 0.75rem;
+  padding: 0.35rem 0.8rem;
+}
+
+.availability a {
+  color: var(--blue);
+}
+
 /* section headings */
 .section-heading {
   border-bottom: 1px solid var(--bg2);

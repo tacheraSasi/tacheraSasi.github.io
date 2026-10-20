@@ -5,13 +5,17 @@
   <article class="content page-intro">{{ .Content }}</article>
 
   <div class="contact-cards">
-    <a class="contact-card" href="{{ .Site.Params.social.github }}" target="_blank" rel="noopener">
-      <h3>GitHub</h3>
-      <p>github.com/tacheraSasi</p>
+    <a class="contact-card" href="mailto:{{ .Site.Params.social.email }}">
+      <h3>Email</h3>
+      <p>{{ .Site.Params.social.email }}</p>
     </a>
     <a class="contact-card" href="{{ .Site.Params.social.linkedin }}" target="_blank" rel="noopener">
       <h3>LinkedIn</h3>
       <p>Tachera W Sasi</p>
+    </a>
+    <a class="contact-card" href="{{ .Site.Params.social.github }}" target="_blank" rel="noopener">
+      <h3>GitHub</h3>
+      <p>github.com/tacheraSasi</p>
     </a>
   </div>
 </main>
