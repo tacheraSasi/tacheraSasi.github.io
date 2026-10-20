@@ -1,4 +1,6 @@
-{{/* Structured data: WebSite, Person, BlogPosting, BreadcrumbList, ItemList. */}}
+{{/* Structured data: WebSite, Person, BlogPosting, BreadcrumbList, ItemList.
+     Built as dicts and jsonify'd once, then safeJS (raw jsonify calls inside
+     <script> get double-escaped by HTML contextual autoescaping). */}}
 {{- $site := .Site -}}
 {{- $authorName := $site.Params.author -}}
 {{- $siteURL := $site.BaseURL -}}
@@ -9,105 +11,105 @@
 {{- end -}}
 {{- $sameAs := $site.Params.social.sameAs | default slice -}}
 
-{{- /* WebSite on every page (cheap, consistent) */ -}}
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": {{ $site.Params.title | jsonify }},
-  "alternateName": {{ $site.Title | jsonify }},
-  "url": {{ $siteURL | jsonify }},
-  "description": {{ $site.Params.description | jsonify }},
-  "inLanguage": "en",
-  "author": { "@type": "Person", "name": {{ $authorName | jsonify }}, "url": {{ $siteURL | jsonify }} },
-  "publisher": { "@type": "Person", "name": {{ $authorName | jsonify }}, "url": {{ $siteURL | jsonify }} }
-}
-</script>
+{{- /* WebSite on every page */ -}}
+{{- $website := dict
+  "@context" "https://schema.org"
+  "@type" "WebSite"
+  "name" $site.Params.title
+  "alternateName" $site.Title
+  "url" $siteURL
+  "description" $site.Params.description
+  "inLanguage" "en"
+  "author" (dict "@type" "Person" "name" $authorName "url" $siteURL)
+  "publisher" (dict "@type" "Person" "name" $authorName "url" $siteURL)
+}}
+<script type="application/ld+json">{{ $website | jsonify | safeJS }}</script>
 
 {{- if .IsHome }}
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "@id": {{ printf "%s#person" $siteURL | jsonify }},
-  "name": {{ $authorName | jsonify }},
-  "url": {{ $siteURL | jsonify }},
-  "image": {{ $ogImage | jsonify }},
-  "jobTitle": {{ $site.Params.authorJobTitle | jsonify }},
-  "description": {{ $site.Params.authorBio | jsonify }},
-  "sameAs": {{ $sameAs | jsonify }}
-}
-</script>
+{{- $person := dict
+  "@context" "https://schema.org"
+  "@type" "Person"
+  "@id" (printf "%s#person" $siteURL)
+  "name" $authorName
+  "url" $siteURL
+  "image" $ogImage
+  "jobTitle" $site.Params.authorJobTitle
+  "description" $site.Params.authorBio
+  "sameAs" $sameAs
+}}
+<script type="application/ld+json">{{ $person | jsonify | safeJS }}</script>
 {{- end }}
 
 {{- /* BlogPosting for writing */ -}}
 {{- if and .IsPage (eq .Section "posts") }}
 {{- $desc := .Params.description | default (.Summary | plainify | htmlUnescape | truncate 160) -}}
 {{- $kw := delimit (union (union (.Params.tags | default slice) (.Params.categories | default slice)) (.Params.keywords | default slice)) ", " -}}
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": {{ .Title | jsonify }},
-  "description": {{ $desc | jsonify }},
-  "image": [{{ $ogImage | jsonify }}],
-  "author": { "@type": "Person", "name": {{ $authorName | jsonify }}, "url": {{ $siteURL | jsonify }} },
-  "publisher": { "@type": "Person", "name": {{ $authorName | jsonify }}, "url": {{ $siteURL | jsonify }} },
-  "mainEntityOfPage": { "@type": "WebPage", "@id": {{ .Permalink | jsonify }} },
-  "url": {{ .Permalink | jsonify }},
-  "datePublished": {{ .PublishDate.Format "2006-01-02T15:04:05Z07:00" | jsonify }},
-  "dateModified": {{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" | jsonify }},
-  "wordCount": {{ .WordCount }},
-  "timeRequired": {{ printf "PT%dM" .ReadingTime | jsonify }},
-  "inLanguage": "en",
-  "articleSection": {{ with .Params.categories }}{{ index . 0 | jsonify }}{{ else }}"Engineering"{{ end }},
-  "keywords": {{ $kw | jsonify }}
-}
-</script>
+{{- $section := "Engineering" -}}
+{{- with .Params.categories -}}{{- $section = index . 0 -}}{{- end -}}
+{{- $blog := dict
+  "@context" "https://schema.org"
+  "@type" "BlogPosting"
+  "headline" (.Title)
+  "description" $desc
+  "image" (slice $ogImage)
+  "author" (dict "@type" "Person" "name" $authorName "url" $siteURL)
+  "publisher" (dict "@type" "Person" "name" $authorName "url" $siteURL)
+  "mainEntityOfPage" (dict "@type" "WebPage" "@id" .Permalink)
+  "url" .Permalink
+  "datePublished" (.PublishDate.Format "2006-01-02T15:04:05Z07:00")
+  "dateModified" (.Lastmod.Format "2006-01-02T15:04:05Z07:00")
+  "wordCount" .WordCount
+  "timeRequired" (printf "PT%dM" .ReadingTime)
+  "inLanguage" "en"
+  "articleSection" $section
+  "keywords" $kw
+}}
+<script type="application/ld+json">{{ $blog | jsonify | safeJS }}</script>
 {{- end }}
 
 {{- /* Breadcrumbs for sections + pages */ -}}
 {{- if not .IsHome }}
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Home", "item": {{ $siteURL | jsonify }} }
-    {{- with .Section }}, { "@type": "ListItem", "position": 2, "name": {{ (humanize .) | jsonify }}, "item": {{ (printf "%s%s/" $siteURL .) | jsonify }} }{{- end }}
-    {{- if .IsPage }}, { "@type": "ListItem", "position": {{ if .Section }}3{{ else }}2{{ end }}, "name": {{ .Title | jsonify }}, "item": {{ .Permalink | jsonify }} }{{- end }}
-  ]
-}
-</script>
+{{- $crumbs := slice (dict "@type" "ListItem" "position" 1 "name" "Home" "item" $siteURL) -}}
+{{- with .Section }}{{ $crumbs = $crumbs | append (dict "@type" "ListItem" "position" 2 "name" (humanize .) "item" (printf "%s%s/" $siteURL .)) }}{{- end }}
+{{- if .IsPage }}
+{{- $crumbPos := 3 -}}
+{{- if not .Section -}}{{- $crumbPos = 2 -}}{{- end -}}
+{{- $crumbs = $crumbs | append (dict "@type" "ListItem" "position" $crumbPos "name" .Title "item" .Permalink) }}
+{{- end }}
+{{- $breadcrumb := dict
+  "@context" "https://schema.org"
+  "@type" "BreadcrumbList"
+  "itemListElement" $crumbs
+}}
+<script type="application/ld+json">{{ $breadcrumb | jsonify | safeJS }}</script>
 {{- end }}
 
 {{- /* Projects list: ItemList of software projects */ -}}
 {{- if and (eq .Kind "section") (eq .Section "projects") }}
-{{- $projects := $site.Data.projects -}}
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "ItemList",
-  "name": "Projects by {{ $authorName }}",
-  "description": "Production systems, developer tools and open source projects built by {{ $authorName }}.",
-  "numberOfItems": {{ len $projects }},
-  "itemListElement": [
-    {{- range $i, $p := first 20 $projects }}
-    {{- if $i }},{{- end }}
-    {
-      "@type": "ListItem",
-      "position": {{ add $i 1 }},
-      "item": {
-        "@type": "SoftwareSourceCode",
-        "name": {{ $p.title | jsonify }},
-        "description": {{ $p.description | jsonify }},
-        "url": {{ $p.url | jsonify }},
-        "programmingLanguage": {{ with $p.tech }}{{ index . 0 | jsonify }}{{ else }}"Go"{{ end }},
-        "author": { "@type": "Person", "name": {{ $authorName | jsonify }} }
-      }
-    }
-    {{- end }}
-  ]
-}
-</script>
+{{- $items := slice -}}
+{{- range first 20 $site.Data.projects }}
+  {{- $lang := "Go" -}}
+  {{- with .tech -}}{{- $lang = index . 0 -}}{{- end -}}
+  {{- $items = $items | append (dict
+    "@type" "ListItem"
+    "position" (add (len $items) 1)
+    "item" (dict
+      "@type" "SoftwareSourceCode"
+      "name" .title
+      "description" .description
+      "url" .url
+      "programmingLanguage" $lang
+      "author" (dict "@type" "Person" "name" $authorName)
+    )
+  ) }}
+{{- end }}
+{{- $itemlist := dict
+  "@context" "https://schema.org"
+  "@type" "ItemList"
+  "name" (printf "Projects by %s" $authorName)
+  "description" (printf "Production systems, developer tools and open source projects built by %s." $authorName)
+  "numberOfItems" (len $site.Data.projects)
+  "itemListElement" $items
+}}
+<script type="application/ld+json">{{ $itemlist | jsonify | safeJS }}</script>
 {{- end }}
