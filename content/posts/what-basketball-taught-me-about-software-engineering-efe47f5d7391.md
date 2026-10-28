@@ -12,8 +12,19 @@ keywords: ["basketball software engineering", "sports lessons programming"]
 images: ["/images/me.jpg"]
 medium: "https://medium.com/@tacherasasi/what-basketball-taught-me-about-software-engineering-efe47f5d7391?source=rss-9a41d7ec29fb------2"
 ---
----2"
-tags: ["tachera", "software-engineering", "programming"]
+
+<!--toc:start-->
+- [I’m 6'1", and apparently I’m supposed to be a big man](#im-61-and-apparently-im-supposed-to-be-a-big-man)
+- [Disclaimer: I talk trash](#disclaimer-i-talk-trash)
+- [Sometimes I play shooting guard and say absolutely nothing](#sometimes-i-play-shooting-guard-and-say-absolutely-nothing)
+- [Court vision is basically systems thinking](#court-vision-is-basically-systems-thinking)
+- [You will get cooked](#you-will-get-cooked)
+- [Practice isn’t supposed to feel impressive](#practice-isnt-supposed-to-feel-impressive)
+- [You don’t have to take everything seriously to take it seriously](#you-dont-have-to-take-everything-seriously-to-take-it-seriously)
+- [The part I didn’t expect](#the-part-i-didnt-expect)
+- [**Here is a video of me playing ball: [https://vt.tiktok.com/ZSbVEET2J/](https://vt.tiktok.com/ZSbVEET2J/)**](#here-is-a-video-of-me-playing-ball-httpsvttiktokcomzsbveet2jhttpsvttiktokcomzsbveet2j)
+<!--toc:end-->
+
 ---
 
 ![](https://cdn-images-1.medium.com/max/1024/1*DCG16BUYEmXkRWpGPwEn6w.png)
@@ -276,4 +287,4 @@ That’s between me and them.
 
 ---
 
-*Originally published on [Medium](https://medium.com/@tacherasasi/what-basketball-taught-me-about-software-engineering-efe47f5d7391?source=rss-9a41d7ec29fb------2).*
+_Originally published on [Medium](https://medium.com/@tacherasasi/what-basketball-taught-me-about-software-engineering-efe47f5d7391?source=rss-9a41d7ec29fb------2)._
