@@ -12,10 +12,6 @@ keywords: ["go io.copy", "golang io copy proxy", "go streaming"]
 images: ["/images/go-1.png"]
 medium: "https://medium.com/@tacherasasi/why-io-copy-is-one-of-gos-most-powerful-functions-9222940b2358?source=rss-9a41d7ec29fb------2"
 ---
----2"
-tags: ["design-pattern-in-golang", "io"]
----
-
 ![](https://cdn-images-1.medium.com/max/1024/1*Nfqq3EkbvVg74Hi1Avbo3A.png)
 
 Most Go developers use io.Copy() early in their journey.

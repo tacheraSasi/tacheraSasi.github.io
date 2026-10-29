@@ -12,10 +12,6 @@ keywords: ["typescript enums compile", "typescript enum javascript output"]
 images: ["/images/me.jpg"]
 medium: "https://medium.com/@tacherasasi/how-typescript-enums-compile-to-javascript-and-why-it-matters-8766881c1728?source=rss-9a41d7ec29fb------2"
 ---
----2"
-tags: ["typescript", "javascript", "enums-in-typescript"]
----
-
 When you’re learning TypeScript, it’s easy to overlook that it all boils down to plain JavaScript in the end. Most TypeScript goodies like types, interfaces, and unions vanish after compilation, living only to help catch errors during development. But there’s one feature that sticks around: **enums**. They’re a bit special, and here’s why.
 
 ### What Happens with Numeric Enums

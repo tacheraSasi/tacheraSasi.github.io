@@ -12,9 +12,6 @@ keywords: ["distributed systems vs monolith", "why not microservices", "distribu
 images: ["/images/go-2.png"]
 medium: "https://medium.com/@tacherasasi/why-most-engineers-shouldnt-build-distributed-systems-and-why-i-did-anyway-20e6ace3f18e?source=rss-9a41d7ec29fb------2"
 ---
----2"
----
-
 ![](https://cdn-images-1.medium.com/max/1024/1*JzWgtsxR_ozYKkQSqV6jVw.png)
 
 Distributed systems are one of the most fascinating areas in software engineering.

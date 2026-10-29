@@ -12,10 +12,6 @@ keywords: ["wails vs tauri vs electron", "go desktop apps", "wails ipc"]
 images: ["/images/mockwails.png"]
 medium: "https://medium.com/@tacherasasi/why-wails-wins-at-ipc-for-go-desktop-apps-and-how-it-stacks-up-against-tauri-electron-5a00b202cf09?source=rss-9a41d7ec29fb------2"
 ---
----2"
-tags: ["golang", "wails"]
----
-
 So you’re building a desktop app with web tech, and you hit the classic problem: *how do I get my native backend to talk nicely with my frontend?* That’s where IPC (Inter-Process Communication) comes in  the secret sauce that makes your Go (or Rust, or Node) logic play well with your slick React/Vue/HTML UI.
 
 Here’s my hot take: **Wails does IPC better than anyone else right now.**  

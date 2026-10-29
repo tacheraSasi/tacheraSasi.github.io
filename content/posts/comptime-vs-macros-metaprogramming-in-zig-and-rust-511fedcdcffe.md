@@ -12,10 +12,6 @@ keywords: ["zig comptime", "rust macros", "metaprogramming zig rust"]
 images: ["/images/zig-1.png"]
 medium: "https://medium.com/@tacherasasi/comptime-vs-macros-metaprogramming-in-zig-and-rust-511fedcdcffe?source=rss-9a41d7ec29fb------2"
 ---
----2"
-tags: ["rust-macros", "zig", "rust", "comptime"]
----
-
 ![](https://cdn-images-1.medium.com/max/1024/1*5v5iBN3T7ascRigMp8HF4Q.png)
 
 Metaprogramming allows code to generate or manipulate other code, often at compile time, boosting flexibility and performance. Two modern languages tackle this differently: Zig with its ***comptime*** feature and Rust with macros. Let’s explore both with examples, drawing from recent discussions and developments as of 2025.

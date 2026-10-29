@@ -6,15 +6,31 @@ draft: false
 author: "Tachera W Sasi"
 description: "After building 200+ GitHub repositories, the biggest lessons were not about architecture. They were fundamentals that make projects actually useful."
 summary: "After building 200+ repositories, the most valuable lessons weren't about architecture; they were the fundamentals that make projects useful."
-tags: ["open-source", "software-engineering", "github", "career", "building-in-public"]
+tags:
+  [
+    "open-source",
+    "software-engineering",
+    "github",
+    "career",
+    "building-in-public",
+  ]
 categories: ["Career"]
-keywords: ["github repositories lessons", "open source lessons", "build in public"]
+keywords:
+  ["github repositories lessons", "open source lessons", "build in public"]
 images: ["/images/me.jpg"]
 medium: "https://medium.com/@tacherasasi/what-200-github-repositories-taught-me-d55cf5184e52?source=rss-9a41d7ec29fb------2"
 ---
----2"
-tags: ["tachera", "software-engineering", "software-development"]
----
+
+<!--toc:start-->
+- [1\. Finishing projects matters more than starting them](#1-finishing-projects-matters-more-than-starting-them)
+- [2\. Simplicity beats cleverness](#2-simplicity-beats-cleverness)
+- [3\. Documentation is not optional](#3-documentation-is-not-optional)
+- [4\. Small tools win](#4-small-tools-win)
+- [5\. Consistency beats motivation](#5-consistency-beats-motivation)
+- [6\. Tooling matters more than trends](#6-tooling-matters-more-than-trends)
+- [7\. Your portfolio becomes your thinking](#7-your-portfolio-becomes-your-thinking)
+- [Final Thought](#final-thought)
+<!--toc:end-->
 
 ![](https://cdn-images-1.medium.com/max/1024/1*nOE2wsJ6INiafWrSkEiN4Q.png)Golang Fanatic here.
 
@@ -43,13 +59,11 @@ But the real value comes from **finishing something** , even if it’s imperfect
 
 When you finish projects you learn things you can never learn from half-built code:
 
-  * deployment problems
-  * real-world bugs
-  * usability issues
-  * performance bottlenecks
-  * documentation gaps
-
-
+- deployment problems
+- real-world bugs
+- usability issues
+- performance bottlenecks
+- documentation gaps
 
 Shipping forces reality into your ideas.
 
@@ -71,11 +85,9 @@ Complex code becomes a burden.
 
 The best tools I built were usually the ones with:
 
-  * fewer dependencies
-  * simple APIs
-  * predictable behavior
-
-
+- fewer dependencies
+- simple APIs
+- predictable behavior
 
 Good software often looks boring.
 
@@ -91,19 +103,15 @@ Suddenly you are staring at your own code wondering:
 
 Good documentation does three things:
 
-  1. Explains **why** something exists
-  2. Shows **how to use it quickly**
-  3. Reduces future confusion
-
-
+1. Explains **why** something exists
+2. Shows **how to use it quickly**
+3. Reduces future confusion
 
 Even a small README with:
 
-  * installation
-  * examples
-  * project goals
-
-
+- installation
+- examples
+- project goals
 
 makes a massive difference.
 
@@ -121,11 +129,9 @@ Developer helpers.
 
 Small tools have advantages:
 
-  * easier to maintain
-  * faster to build
-  * easier for others to adopt
-
-
+- easier to maintain
+- faster to build
+- easier for others to adopt
 
 A focused tool that solves **one specific problem well** can be more impactful than a large system trying to do everything.
 
@@ -140,12 +146,10 @@ But building many projects taught me that progress mostly comes from **consisten
 
 Small steps every week:
 
-  * improving a tool
-  * fixing a bug
-  * cleaning up documentation
-  * finishing a feature
-
-
+- improving a tool
+- fixing a bug
+- cleaning up documentation
+- finishing a feature
 
 Over time this compounds into a large body of work.
 
@@ -155,11 +159,9 @@ Developers chase new frameworks constantly.
 
 But the projects that lasted the longest in my repositories were built with tools that had:
 
-  * great tooling
-  * fast iteration
-  * simple deployment
-
-
+- great tooling
+- fast iteration
+- simple deployment
 
 When the tooling is good, you build faster.
 
@@ -171,12 +173,10 @@ Looking back at hundreds of repositories is like looking at a timeline of your t
 
 You see:
 
-  * bad decisions
-  * experiments
-  * abandoned ideas
-  * improvements over time
-
-
+- bad decisions
+- experiments
+- abandoned ideas
+- improvements over time
 
 And that is the real value.
 
@@ -200,4 +200,5 @@ Keep going.
 
 ---
 
-*Originally published on [Medium](https://medium.com/@tacherasasi/what-200-github-repositories-taught-me-d55cf5184e52?source=rss-9a41d7ec29fb------2).*
+_Originally published on [Medium](https://medium.com/@tacherasasi/what-200-github-repositories-taught-me-d55cf5184e52?source=rss-9a41d7ec29fb------2)._
+

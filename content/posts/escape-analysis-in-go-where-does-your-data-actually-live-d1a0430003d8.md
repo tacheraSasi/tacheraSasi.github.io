@@ -12,9 +12,6 @@ keywords: ["go escape analysis", "golang stack vs heap", "go performance"]
 images: ["/images/go-2.png"]
 medium: "https://medium.com/@tacherasasi/escape-analysis-in-go-where-does-your-data-actually-live-d1a0430003d8?source=rss-9a41d7ec29fb------2"
 ---
----2"
----
-
 ![](https://cdn-images-1.medium.com/max/300/1*S0qxt-hT88hXkOFCj-nSBw.jpeg)
 
 If you’ve been writing Go for a while, you’ve probably heard the terms **stack** and **heap** tossed around. But have you ever wondered how Go decides where to put your variables? That’s exactly what **escape analysis** is about  and understanding it can help you write faster, more efficient Go code.

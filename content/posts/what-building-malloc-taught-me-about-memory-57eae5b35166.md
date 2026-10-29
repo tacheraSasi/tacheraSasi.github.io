@@ -12,8 +12,22 @@ keywords: ["write malloc c", "how malloc works", "memory allocation tutorial"]
 images: ["/images/me.jpg"]
 medium: "https://medium.com/@tacherasasi/what-building-malloc-taught-me-about-memory-57eae5b35166?source=rss-9a41d7ec29fb------2"
 ---
----2"
-tags: ["clang"]
+
+<!--toc:start-->
+- [Why Understanding Memory Still Matters](#why-understanding-memory-still-matters)
+- [Step 1: Where malloc Gets Memory](#step-1-where-malloc-gets-memory)
+- [Step 2: The Naive Allocator](#step-2-the-naive-allocator)
+- [Step 3: The Hidden Header Trick](#step-3-the-hidden-header-trick)
+- [Step 4: Tracking Allocations](#step-4-tracking-allocations)
+- [Step 5: What free Actually Does](#step-5-what-free-actually-does)
+- [What Real Allocators Do Differently](#what-real-allocators-do-differently)
+- [What I Learned From This](#what-i-learned-from-this)
+- [Abstractions hide complexity, but the fundamentals still matter](#abstractions-hide-complexity-but-the-fundamentals-still-matter)
+- [Performance often comes from understanding the layers below you](#performance-often-comes-from-understanding-the-layers-below-you)
+- [Systems knowledge compounds](#systems-knowledge-compounds)
+- [Final Thoughts](#final-thoughts)
+<!--toc:end-->
+
 ---
 
 ![](https://cdn-images-1.medium.com/max/1024/1*2dOqSEchtIkDv2Fma09rOA.png)
@@ -49,12 +63,13 @@ Even if you work in higher level languages like **Go** , these concepts still po
 ### Step 1: Where malloc Gets Memory
 
 When a program runs, memory roughly looks like this:
+
 ```
 
 
-Code  
-Globals  
-Heap  ← grows upward  
+Code
+Globals
+Heap  ← grows upward
 Stack ← grows downward
 ```
 
@@ -63,6 +78,7 @@ malloc allocates from the **heap**.
 Under the hood, the allocator asks the OS for more heap space using a system call like sbrk().
 
 Example:
+
 ```
 
 
@@ -76,11 +92,12 @@ Think of it like extending the end of your program’s heap.
 ### Step 2: The Naive Allocator
 
 The simplest possible allocator would just call sbrk.
+
 ```
 
 
-void *my_malloc(size_t size) {  
-    return sbrk(size);  
+void *my_malloc(size_t size) {
+    return sbrk(size);
 }
 ```
 
@@ -99,6 +116,7 @@ So real allocators store **metadata**.
 Every allocation secretly stores a small header before the memory returned to the user.
 
 Memory layout:
+
 ```
 
 
@@ -106,26 +124,29 @@ Memory layout:
 ```
 
 The header might contain:
+
 ```
 
 
-size  
-is_free  
+size
+is_free
 next_block
 ```
 
 Example structure:
+
 ```rust
 
 
-typedef struct block_header {  
-    size_t size;  
-    int is_free;  
-    struct block_header *next;  
+typedef struct block_header {
+    size_t size;
+    int is_free;
+    struct block_header *next;
 } block_header_t;
 ```
 
 When the allocator returns memory, it actually returns a pointer **after the header**.
+
 ```
 
 
@@ -133,6 +154,7 @@ return (void *)(block + 1);
 ```
 
 Which means the user sees:
+
 ```
 
 
@@ -144,21 +166,20 @@ While the allocator still has its metadata.
 ### Step 4: Tracking Allocations
 
 Blocks are usually tracked using a linked list.
+
 ```
 
 
-heap_start  
-   ↓  
+heap_start
+   ↓
 [block A] → [block B] → [block C]
 ```
 
 When malloc runs:
 
-  1. search for a free block big enough
-  2. reuse it if possible
-  3. otherwise request more memory from the OS
-
-
+1. search for a free block big enough
+2. reuse it if possible
+3. otherwise request more memory from the OS
 
 This keeps allocations fast and avoids unnecessary system calls.
 
@@ -167,6 +188,7 @@ This keeps allocations fast and avoids unnecessary system calls.
 One surprising thing: free usually does **not return memory to the OS**.
 
 Instead it just marks the block as reusable.
+
 ```
 
 
@@ -180,18 +202,20 @@ Future allocations can reuse that block instead of requesting more memory.
 Real allocators (like the ones used by **glibc**) add several optimizations:
 
 **Block splitting**
+
 ```
 
 
-Free block: 100 bytes  
+Free block: 100 bytes
 Need: 20
 ```
 
 Split into:
+
 ```
 
 
-20 used  
+20 used
 80 still free
 ```
 
@@ -244,4 +268,5 @@ GITHUB => <https://github.com/tacheraSasi/malloc.git>
 
 ---
 
-*Originally published on [Medium](https://medium.com/@tacherasasi/what-building-malloc-taught-me-about-memory-57eae5b35166?source=rss-9a41d7ec29fb------2).*
+_Originally published on [Medium](https://medium.com/@tacherasasi/what-building-malloc-taught-me-about-memory-57eae5b35166?source=rss-9a41d7ec29fb------2)._
+

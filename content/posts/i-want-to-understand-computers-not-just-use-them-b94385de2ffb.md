@@ -12,10 +12,6 @@ keywords: ["understand computers", "systems programming fundamentals"]
 images: ["/images/me.jpg"]
 medium: "https://medium.com/@tacherasasi/i-want-to-understand-computers-not-just-use-them-b94385de2ffb?source=rss-9a41d7ec29fb------2"
 ---
----2"
-tags: ["tachera", "software-engineering", "systems-programming"]
----
-
 ![](https://cdn-images-1.medium.com/max/1024/1*Z-4jE3q_hWwAJq4NPpkbrw.png)
 
 I’ve spent a lot of time writing software.

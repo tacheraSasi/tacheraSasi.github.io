@@ -12,10 +12,6 @@ keywords: ["background worker debugging", "shell script bug", "silent failure de
 images: ["/images/go-2.png"]
 medium: "https://medium.com/@tacherasasi/the-one-word-bug-that-broke-our-worker-for-6-days-9cadd534ee77?source=rss-9a41d7ec29fb------2"
 ---
----2"
-tags: ["devops", "docker", "golang"]
----
-
 ![](https://cdn-images-1.medium.com/max/1024/1*CtVFn53iNGx3lQ2MEe3JKw.png)
 
 ### For six days, our system was lying to us

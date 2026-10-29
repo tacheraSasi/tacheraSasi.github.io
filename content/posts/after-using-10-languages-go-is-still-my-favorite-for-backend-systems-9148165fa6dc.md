@@ -12,10 +12,6 @@ keywords: ["go backend", "golang backend systems", "programming languages compar
 images: ["/images/go-1.png"]
 medium: "https://medium.com/@tacherasasi/after-using-10-languages-go-is-still-my-favorite-for-backend-systems-9148165fa6dc?source=rss-9a41d7ec29fb------2"
 ---
----2"
-tags: ["programming-languages", "golang", "backend-development", "scalable-applications"]
----
-
 ![](https://cdn-images-1.medium.com/max/1024/1*AYRooeSNqJ_pq64abMMcsg.png)Golang Fanatic Here
 
 ### Introduction
