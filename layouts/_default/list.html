@@ -3,7 +3,7 @@
   {{ partial "breadcrumbs.html" . }}
   <h1 class="page-title">{{ .Title }}</h1>
   {{ with .Content }}<div class="page-intro">{{ . }}</div>{{ end }}
-  <p class="meta">{{ len .Pages }} {{ if eq (len .Pages) 1 }}article{{ else }}articles{{ end }} on backend engineering, Go, systems and building in public.</p>
+  <p class="meta">{{ len .Pages }} {{ if eq (len .Pages) 1 }}article{{ else }}articles{{ end }}, on whatever I'm figuring out: engineering, systems, and everything else.</p>
   <ul class="essay-list">
     {{ range .Pages.ByPublishDate.Reverse }}
     <li>

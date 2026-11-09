@@ -1,7 +1,11 @@
 ---
-title: "Writings on Backend Engineering, Go and Systems"
-description: "Essays and engineering notes by Tachera W Sasi on Go, backend systems, distributed systems, self-hosted infrastructure and building in public."
-keywords: ["go blog", "backend engineering blog", "golang tutorials", "distributed systems essays", "self-hosted infrastructure"]
+title: "Writings"
+description: "Essays and notes by Tachera W Sasi. Backend engineering and Go, but also the lessons, the music, the basketball, and everything else I'm figuring out in public."
+keywords: ["tachera sasi blog", "essays", "engineering notes", "go", "writing", "building in public"]
 ---
 
-Essays and engineering notes on Go, backend systems, distributed systems and building in public. I write about what I actually build: [BeamDrop](/projects/beamdrop/), [ekilie.cloud](/projects/ekilie-cloud/) and [VintLang](/projects/vintlang/). Browse by [tag](/tags/) or [category](/categories/).
+Mostly I write about what I actually build: backend systems in Go, self-hosted infrastructure, and projects like [BeamDrop](/projects/beamdrop/), [ekilie.cloud](/projects/ekilie-cloud/) and [VintLang](/projects/vintlang/).
+
+But not everything worth writing down is technical. You'll also find lessons from basketball, music, and whatever else I'm figuring out as I go.
+
+Browse by [tag](/tags/) or [category](/categories/). If you'd rather watch me talk than read me type, that's over in [talks](/talks/).

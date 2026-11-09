@@ -1,0 +1,33 @@
+{{ define "main" }}
+<main id="main" class="writing-list">
+  {{ partial "breadcrumbs.html" . }}
+  <h1 class="page-title">{{ .Title }}</h1>
+  {{ with .Content }}<div class="page-intro">{{ . }}</div>{{ end }}
+  {{ $talks := where .Site.RegularPages "Params.tags" "intersect" (slice "talk" "talks" "speaking") }}
+  <p class="meta">{{ len $talks }} {{ if eq (len $talks) 1 }}talk{{ else }}talks{{ end }}, written up the way I gave them.</p>
+  {{ if $talks }}
+  <ul class="essay-list">
+    {{ range $talks.ByPublishDate.Reverse }}
+    <li>
+      <article>
+        <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+        <p class="meta">
+          <time datetime="{{ .PublishDate.Format "2006-01-02" }}">{{ .PublishDate.Format .Site.Params.dateFormat }}</time>
+          &middot; {{ .ReadingTime }} min read
+          {{- with .Params.categories }} &middot; {{ range $i, $c := . }}{{ if $i }}, {{ end }}<a href="{{ (printf "/categories/%s/" ($c | urlize)) | absURL }}">{{ $c }}</a>{{ end }}{{- end }}
+        </p>
+        {{ with .Params.description | default (.Summary | plainify | truncate 160) }}<p>{{ . }}</p>{{ end }}
+        {{ with .Params.tags }}
+        <p class="tag-row">
+          {{ range first 5 . }}<a class="link tag" href='{{ "tags" | absURL }}/{{ . | urlize }}' rel="tag">#{{ . }}</a> {{ end }}
+        </p>
+        {{ end }}
+      </article>
+    </li>
+    {{ end }}
+  </ul>
+  {{ else }}
+  <p>No talks published yet. Check back soon.</p>
+  {{ end }}
+</main>
+{{ end }}
